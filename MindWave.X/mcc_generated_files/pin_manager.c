@@ -68,7 +68,7 @@ void PIN_MANAGER_Initialize(void)
     */
     TRISE = 0x07;
     TRISA = 0xFF;
-    TRISB = 0xCF;
+    TRISB = 0xDF;
     TRISC = 0x01;
     TRISD = 0x80;
 
@@ -125,7 +125,7 @@ void PIN_MANAGER_Initialize(void)
     
 	
     RXPPS = 0x0B;   //RB3->EUSART:RX;    
-    RB4PPS = 0x24;   //RB4->EUSART:TX;    
+    RC4PPS = 0x24;   //RC4->EUSART:TX;    
 }
   
 void PIN_MANAGER_IOC(void)

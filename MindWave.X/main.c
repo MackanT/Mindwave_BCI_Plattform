@@ -87,6 +87,12 @@ void printDebug(){
     EUSART_Write(meditation);
     EUSART_Write(0x0d);
     EUSART_Write(0x0a);
+    EUSART_Write('D');
+    EUSART_Write(':');
+    EUSART_Write(' ');
+    EUSART_Write(eegBands[0]);
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
 }
 
 void forwards(){
@@ -131,6 +137,8 @@ void __interrupt() timer_0(void){
     }
 }
 
+//uint32t readDelta()
+
 void main(void)
 {
     // initialize the device
@@ -139,6 +147,8 @@ void main(void)
     INTERRUPT_GlobalInterruptEnable();
     INTERRUPT_PeripheralInterruptEnable();
     TMR0_Initialize();
+    
+    G1_SetHigh();
 
     while (1)
     {
@@ -209,22 +219,25 @@ void main(void)
                       case 0x83:
                         // Used to collect individual values for the different wavetypes
                         i++;
-                        for (int j = 0; j < 8; j++) {
-                            eegBands[j] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
+                        for (int k = 0; k < 8; k++) {
+                            eegBands[k] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
                         }
                         break;
                       default:
                         break;
                       } // switch
                     } // for loop
-                       
+                    j++;
+                    
                     if (poorQuality == 200) {
-                        1;
+                        //G3_Toggle();
+                        G7_SetLow();
                         //EUSART_Write('F');
                         //EUSART_Write(0x0d);
                         //EUSART_Write(0x0a);
                     } else { 
-                        //printDebug();  
+                        G7_SetHigh();
+                        printDebug();  
                         if (meditation > 60){
                             turn_left();
                         } else {

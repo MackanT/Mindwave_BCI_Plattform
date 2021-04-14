@@ -77,18 +77,6 @@
 #define RB3_SetAnalogMode()         do { ANSELBbits.ANSB3 = 1; } while(0)
 #define RB3_SetDigitalMode()        do { ANSELBbits.ANSB3 = 0; } while(0)
 
-// get/set RB4 procedures
-#define RB4_SetHigh()            do { LATBbits.LATB4 = 1; } while(0)
-#define RB4_SetLow()             do { LATBbits.LATB4 = 0; } while(0)
-#define RB4_Toggle()             do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0)
-#define RB4_GetValue()              PORTBbits.RB4
-#define RB4_SetDigitalInput()    do { TRISBbits.TRISB4 = 1; } while(0)
-#define RB4_SetDigitalOutput()   do { TRISBbits.TRISB4 = 0; } while(0)
-#define RB4_SetPullup()             do { WPUBbits.WPUB4 = 1; } while(0)
-#define RB4_ResetPullup()           do { WPUBbits.WPUB4 = 0; } while(0)
-#define RB4_SetAnalogMode()         do { ANSELBbits.ANSB4 = 1; } while(0)
-#define RB4_SetDigitalMode()        do { ANSELBbits.ANSB4 = 0; } while(0)
-
 // get/set KEY_AT aliases
 #define KEY_AT_TRIS                 TRISBbits.TRISB5
 #define KEY_AT_LAT                  LATBbits.LATB5
@@ -166,25 +154,17 @@
 #define G8_SetAnalogMode()      do { ANSELCbits.ANSC3 = 1; } while(0)
 #define G8_SetDigitalMode()     do { ANSELCbits.ANSC3 = 0; } while(0)
 
-// get/set G3 aliases
-#define G3_TRIS                 TRISCbits.TRISC4
-#define G3_LAT                  LATCbits.LATC4
-#define G3_PORT                 PORTCbits.RC4
-#define G3_WPU                  WPUCbits.WPUC4
-#define G3_OD                   ODCONCbits.ODC4
-#define G3_ANS                  ANSELCbits.ANSC4
-#define G3_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
-#define G3_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
-#define G3_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
-#define G3_GetValue()           PORTCbits.RC4
-#define G3_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
-#define G3_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
-#define G3_SetPullup()          do { WPUCbits.WPUC4 = 1; } while(0)
-#define G3_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
-#define G3_SetPushPull()        do { ODCONCbits.ODC4 = 0; } while(0)
-#define G3_SetOpenDrain()       do { ODCONCbits.ODC4 = 1; } while(0)
-#define G3_SetAnalogMode()      do { ANSELCbits.ANSC4 = 1; } while(0)
-#define G3_SetDigitalMode()     do { ANSELCbits.ANSC4 = 0; } while(0)
+// get/set RC4 procedures
+#define RC4_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
+#define RC4_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
+#define RC4_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
+#define RC4_GetValue()              PORTCbits.RC4
+#define RC4_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
+#define RC4_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
+#define RC4_SetPullup()             do { WPUCbits.WPUC4 = 1; } while(0)
+#define RC4_ResetPullup()           do { WPUCbits.WPUC4 = 0; } while(0)
+#define RC4_SetAnalogMode()         do { ANSELCbits.ANSC4 = 1; } while(0)
+#define RC4_SetDigitalMode()        do { ANSELCbits.ANSC4 = 0; } while(0)
 
 // get/set G2 aliases
 #define G2_TRIS                 TRISCbits.TRISC5
