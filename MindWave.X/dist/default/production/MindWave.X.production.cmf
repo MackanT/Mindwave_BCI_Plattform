@@ -1,0 +1,745 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 4 8007 8007 2 2
+$dist/default/production\MindWave.X.production.o
+cinit CODE 0 7F1 7F1 F 2
+text1 CODE 0 662 662 6 2
+text2 CODE 0 65C 65C 6 2
+text3 CODE 0 676 676 C 2
+text4 CODE 0 645 645 5 2
+text5 CODE 0 68F 68F F 2
+text6 CODE 0 682 682 D 2
+text7 CODE 0 641 641 4 2
+text8 CODE 0 6C0 6C0 45 2
+text9 CODE 0 66E 66E 8 2
+text10 CODE 0 69E 69E 22 2
+text11 CODE 0 656 656 6 2
+text12 CODE 0 650 650 6 2
+text13 CODE 0 64A 64A 6 2
+nvBANK0 BANK0 1 6A 6A 6 1
+maintext CODE 0 705 705 EC 2
+cstackCOMMON COMMON 1 70 70 A 1
+bssBANK0 BANK0 1 20 20 4A 1
+clrtext CODE 0 668 668 6 2
+bssCOMMON COMMON 1 7A 7A 4 1
+config CONFIG 4 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-66F 1
+RAM 6A0-6EF 1
+RAM 720-76F 1
+RAM 7A0-7EF 1
+RAM 820-86F 1
+RAM 8A0-8EF 1
+RAM 920-96F 1
+RAM 9A0-9EF 1
+RAM A20-A6F 1
+RAM AA0-AEF 1
+RAM B20-B6F 1
+RAM BA0-BEF 1
+RAM C20-C6F 1
+RAM CA0-CBF 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 4-640 2
+CONST 800-3FFF 2
+ENTRY 4-640 2
+ENTRY 800-3FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-69F 1
+SFR14 700-71F 1
+SFR15 780-79F 1
+SFR16 800-81F 1
+SFR17 880-89F 1
+SFR18 900-91F 1
+SFR19 980-99F 1
+SFR20 A00-A1F 1
+SFR21 A80-A9F 1
+SFR22 B00-B1F 1
+SFR23 B80-B9F 1
+SFR24 C00-C1F 1
+SFR25 C80-C9F 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2050-27EF 1
+CODE 4-640 2
+CODE 800-3FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-66F 1
+BANK13 6A0-6EF 1
+BANK14 720-76F 1
+BANK15 7A0-7EF 1
+BANK16 820-86F 1
+BANK17 8A0-8EF 1
+BANK18 920-96F 1
+BANK19 9A0-9EF 1
+BANK20 A20-A6F 1
+BANK21 AA0-AEF 1
+BANK22 B20-B6F 1
+BANK23 BA0-BEF 1
+BANK24 C20-C6F 1
+BANK25 CA0-CBF 1
+BIGRAM 2000-27EF 1
+STRCODE 4-640 2
+STRCODE 800-3FFF 2
+STRING 4-640 2
+STRING 800-3FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\MindWave.X.production.o
+7F1 cinit CODE >5678:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F1 cinit CODE >5681:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F1 cinit CODE >5738:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F2 cinit CODE >5739:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F3 cinit CODE >5740:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F4 cinit CODE >5741:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F5 cinit CODE >5745:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F6 cinit CODE >5746:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F7 cinit CODE >5747:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F8 cinit CODE >5748:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7F9 cinit CODE >5749:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7FA cinit CODE >5750:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7FD cinit CODE >5756:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7FD cinit CODE >5758:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+7FE cinit CODE >5759:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+64A text13 CODE >165:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+64A text13 CODE >166:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+64F text13 CODE >167:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+650 text12 CODE >157:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+650 text12 CODE >158:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+655 text12 CODE >159:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+656 text11 CODE >161:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+656 text11 CODE >162:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+65B text11 CODE >163:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+69E text10 CODE >66:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+69E text10 CODE >71:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6A1 text10 CODE >74:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6A3 text10 CODE >77:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6A5 text10 CODE >80:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6A7 text10 CODE >83:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6A8 text10 CODE >86:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6AF text10 CODE >87:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6B6 text10 CODE >88:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6BD text10 CODE >90:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+6BF text10 CODE >92:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+66E text9 CODE >59:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+66E text9 CODE >62:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+671 text9 CODE >64:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+673 text9 CODE >66:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+674 text9 CODE >68:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+675 text9 CODE >69:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+6C0 text8 CODE >55:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6C0 text8 CODE >60:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6C2 text8 CODE >61:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6C3 text8 CODE >62:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6C4 text8 CODE >63:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6C5 text8 CODE >64:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6C6 text8 CODE >69:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6C9 text8 CODE >70:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6CB text8 CODE >71:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6CD text8 CODE >72:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6CF text8 CODE >73:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6D1 text8 CODE >78:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6D4 text8 CODE >79:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6D6 text8 CODE >80:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6D8 text8 CODE >81:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6DA text8 CODE >82:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6DC text8 CODE >87:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6DE text8 CODE >88:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6DF text8 CODE >89:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E0 text8 CODE >90:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E1 text8 CODE >91:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E2 text8 CODE >92:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E4 text8 CODE >97:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E6 text8 CODE >98:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E7 text8 CODE >99:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E8 text8 CODE >100:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6E9 text8 CODE >101:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6EA text8 CODE >106:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6ED text8 CODE >107:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6EF text8 CODE >108:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6F1 text8 CODE >109:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6F3 text8 CODE >110:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6F5 text8 CODE >115:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6F8 text8 CODE >116:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6FA text8 CODE >117:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6FC text8 CODE >118:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+6FE text8 CODE >127:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+701 text8 CODE >128:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+704 text8 CODE >129:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/pin_manager.c
+641 text7 CODE >71:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+641 text7 CODE >74:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+644 text7 CODE >75:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+682 text6 CODE >50:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+682 text6 CODE >53:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+685 text6 CODE >54:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+688 text6 CODE >55:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+68B text6 CODE >56:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+68E text6 CODE >57:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/mcc.c
+68F text5 CODE >113:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+68F text5 CODE >115:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+68F text5 CODE >117:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+694 text5 CODE >119:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+695 text5 CODE >121:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+69A text5 CODE >125:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+69B text5 CODE >126:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+69C text5 CODE >129:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+69D text5 CODE >130:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+645 text4 CODE >99:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+645 text4 CODE >101:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+649 text4 CODE >102:C:\Users\macka\MPLABXProjects\MindWave.X\mcc_generated_files/eusart.c
+676 text3 CODE >61:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+676 text3 CODE >62:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+676 text3 CODE >63:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+67A text3 CODE >63:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+67E text3 CODE >64:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+681 text3 CODE >67:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+65C text2 CODE >112:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+65C text2 CODE >113:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+65E text2 CODE >114:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+65F text2 CODE >115:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+660 text2 CODE >116:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+661 text2 CODE >117:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+662 text1 CODE >98:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+662 text1 CODE >99:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+664 text1 CODE >100:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+665 text1 CODE >101:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+666 text1 CODE >102:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+667 text1 CODE >103:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+705 maintext CODE >119:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+705 maintext CODE >122:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+708 maintext CODE >139:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+708 maintext CODE >142:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+70C maintext CODE >142:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+710 maintext CODE >143:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+714 maintext CODE >143:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+718 maintext CODE >145:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+721 maintext CODE >146:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+726 maintext CODE >146:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+72A maintext CODE >146:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+72F maintext CODE >150:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+730 maintext CODE >151:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+733 maintext CODE >152:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+73D maintext CODE >153:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+745 maintext CODE >154:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+74F maintext CODE >154:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+753 maintext CODE >154:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+757 maintext CODE >156:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+75D maintext CODE >157:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+75E maintext CODE >159:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+760 maintext CODE >159:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+764 maintext CODE >161:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+768 maintext CODE >162:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+76A maintext CODE >163:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+76B maintext CODE >165:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+76E maintext CODE >168:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+772 maintext CODE >169:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+77A maintext CODE >170:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+77D maintext CODE >171:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+77E maintext CODE >173:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+782 maintext CODE >174:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+78B maintext CODE >175:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+78C maintext CODE >177:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+790 maintext CODE >178:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+798 maintext CODE >179:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+799 maintext CODE >181:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+79F maintext CODE >182:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7A0 maintext CODE >184:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7A6 maintext CODE >185:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7A7 maintext CODE >188:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7B0 maintext CODE >188:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7B5 maintext CODE >188:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7B8 maintext CODE >188:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7BB maintext CODE >188:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7BE maintext CODE >188:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7C1 maintext CODE >188:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7C4 maintext CODE >189:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7CE maintext CODE >189:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7D2 maintext CODE >189:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7D6 maintext CODE >191:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7DD maintext CODE >198:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7DF maintext CODE >198:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7E3 maintext CODE >199:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7E6 maintext CODE >200:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7E9 maintext CODE >202:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7EC maintext CODE >203:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+7EF maintext CODE >211:C:\Users\macka\MPLABXProjects\MindWave.X\main.c
+668 clrtext CODE >5727:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+668 clrtext CODE >5728:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+669 clrtext CODE >5729:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+669 clrtext CODE >5730:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+66A clrtext CODE >5731:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+66B clrtext CODE >5732:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+66C clrtext CODE >5733:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+66D clrtext CODE >5734:C:\Users\macka\AppData\Local\Temp\xcAsio0.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 3 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_EUSART_Read D1E 0 CODE 0 text5 dist/default/production\MindWave.X.production.o
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10010 0 ABS 0 - -
+_meditation 7A 0 COMMON 1 bssCOMMON dist/default/production\MindWave.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_WDT_Initialize C8A 0 CODE 0 text7 dist/default/production\MindWave.X.production.o
+main@i 76 0 COMMON 1 cstackCOMMON dist/default/production\MindWave.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_LATA 10C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_LATB 10D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_LATC 10E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_LATD 10F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_LATE 110 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_WPUA 20C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_WPUB 20D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_WPUC 20E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_WPUD 20F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_WPUE 210 0 ABS 0 - dist/default/production\MindWave.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+_main E0A 0 CODE 0 maintext dist/default/production\MindWave.X.production.o
+_stop CB8 0 CODE 0 text2 dist/default/production\MindWave.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+start 4 0 CODE 0 init C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+__size_of_main 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__size_of_stop 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_EUSART_SetFramingErrorHandler CAC 0 CODE 0 text12 dist/default/production\MindWave.X.production.o
+__end_of_EUSART_SetOverrunErrorHandler CB8 0 CODE 0 text11 dist/default/production\MindWave.X.production.o
+_OPTION_REGbits 97 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__end_of_EUSART_Initialize D80 0 CODE 0 text10 dist/default/production\MindWave.X.production.o
+__size_of_turn_right 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_RC1STAbits 19D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_EUSART_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+main@payloadLength 74 0 COMMON 1 cstackCOMMON dist/default/production\MindWave.X.production.o
+_ANSELA 18C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ANSELB 18D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ANSELC 18E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ANSELD 18F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ANSELE 190 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_BORCON 9D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__end_of_EUSART_is_rx_ready C94 0 CODE 0 text4 dist/default/production\MindWave.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+_INLVLA 38C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_INLVLB 38D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_INLVLC 38E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_INLVLD 38F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+___stackhi 27EF 0 ABS 0 - C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+___stacklo 2050 0 ABS 0 - C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+_EUSART_Initialize D3C 0 CODE 0 text10 dist/default/production\MindWave.X.production.o
+_EUSART_is_rx_ready C8A 0 CODE 0 text4 dist/default/production\MindWave.X.production.o
+_PIN_MANAGER_Initialize D80 0 CODE 0 text8 dist/default/production\MindWave.X.production.o
+start_initialization FE2 0 CODE 0 cinit dist/default/production\MindWave.X.production.o
+_ODCONA 28C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ODCONB 28D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ODCONC 28E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ODCOND 28F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_ODCONE 290 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_EUSART_SetErrorHandler C94 0 CODE 0 text13 dist/default/production\MindWave.X.production.o
+_OSCCON 9B 0 ABS 0 - dist/default/production\MindWave.X.production.o
+EUSART_SetOverrunErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\MindWave.X.production.o
+_RC1REG 199 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_RC1STA 19D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_RC6PPS EA6 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__size_of_EUSART_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__size_of_EUSART_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__end_of_SYSTEM_Initialize D1E 0 CODE 0 text6 dist/default/production\MindWave.X.production.o
+clear_ram0 CD0 0 CODE 0 clrtext dist/default/production\MindWave.X.production.o
+_TX1REG 19A 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_TX1STA 19E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_WDTCON 99 0 ABS 0 - dist/default/production\MindWave.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+__end_of_EUSART_Read D3C 0 CODE 0 text5 dist/default/production\MindWave.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+_payloadData 20 0 BANK0 1 bssBANK0 dist/default/production\MindWave.X.production.o
+__Hcinit 1000 0 CODE 0 cinit -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 ABS 0 bank13 -
+__Hbank14 0 0 ABS 0 bank14 -
+__Hbank15 0 0 ABS 0 bank15 -
+__Hbank16 0 0 ABS 0 bank16 -
+__Hbank17 0 0 ABS 0 bank17 -
+__Hbank18 0 0 ABS 0 bank18 -
+__Hbank19 0 0 ABS 0 bank19 -
+__Hbank20 0 0 ABS 0 bank20 -
+__Hbank21 0 0 ABS 0 bank21 -
+__Hbank22 0 0 ABS 0 bank22 -
+__Hbank23 0 0 ABS 0 bank23 -
+__Hbank24 0 0 ABS 0 bank24 -
+__Hbank25 0 0 ABS 0 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 19F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit FE2 0 CODE 0 cinit -
+EUSART_SetErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\MindWave.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 6A 0 BANK0 1 nvBANK0 dist/default/production\MindWave.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_SYSTEM_Initialize D04 0 CODE 0 text6 dist/default/production\MindWave.X.production.o
+__size_of_readByte 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\macka\AppData\Local\Temp\xcAsio0.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+EUSART_SetFramingErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\MindWave.X.production.o
+__ptext10 D3C 0 CODE 0 text10 dist/default/production\MindWave.X.production.o
+__ptext11 CAC 0 CODE 0 text11 dist/default/production\MindWave.X.production.o
+__ptext12 CA0 0 CODE 0 text12 dist/default/production\MindWave.X.production.o
+__ptext13 C94 0 CODE 0 text13 dist/default/production\MindWave.X.production.o
+__end_of_PIN_MANAGER_Initialize E0A 0 CODE 0 text8 dist/default/production\MindWave.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 ABS 0 bank13 -
+__Lbank14 0 0 ABS 0 bank14 -
+__Lbank15 0 0 ABS 0 bank15 -
+__Lbank16 0 0 ABS 0 bank16 -
+__Lbank17 0 0 ABS 0 bank17 -
+__Lbank18 0 0 ABS 0 bank18 -
+__Lbank19 0 0 ABS 0 bank19 -
+__Lbank20 0 0 ABS 0 bank20 -
+__Lbank21 0 0 ABS 0 bank21 -
+__Lbank22 0 0 ABS 0 bank22 -
+__Lbank23 0 0 ABS 0 bank23 -
+__Lbank24 0 0 ABS 0 bank24 -
+__Lbank25 0 0 ABS 0 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext E0A 0 CODE 0 maintext dist/default/production\MindWave.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__end_of_EUSART_SetErrorHandler CA0 0 CODE 0 text13 dist/default/production\MindWave.X.production.o
+_generatedChecksum 7D 0 COMMON 1 bssCOMMON dist/default/production\MindWave.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_LATBbits 10D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_LATCbits 10E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_LATDbits 10F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__size_of_EUSART_is_rx_ready 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+main@i_408 78 0 COMMON 1 cstackCOMMON dist/default/production\MindWave.X.production.o
+_turn_right CC4 0 CODE 0 text1 dist/default/production\MindWave.X.production.o
+_readByte CEC 0 CODE 0 text3 dist/default/production\MindWave.X.production.o
+__size_of_EUSART_Read 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_EUSART_FramingErrorHandler 6E 0 BANK0 1 nvBANK0 dist/default/production\MindWave.X.production.o
+_EUSART_OverrunErrorHandler 6C 0 BANK0 1 nvBANK0 dist/default/production\MindWave.X.production.o
+_OSCSTAT 9C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_OSCTUNE 9A 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__end_of_readByte D04 0 CODE 0 text3 dist/default/production\MindWave.X.production.o
+_EUSART_ErrorHandler 6A 0 BANK0 1 nvBANK0 dist/default/production\MindWave.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\MindWave.X.production.o
+_PIR1bits 11 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Lend_init 4 0 CODE 0 end_init -
+_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_EUSART_SetFramingErrorHandler CA0 0 CODE 0 text12 dist/default/production\MindWave.X.production.o
+_EUSART_SetOverrunErrorHandler CAC 0 CODE 0 text11 dist/default/production\MindWave.X.production.o
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\MindWave.X.production.o
+_attention 67 0 BANK0 1 bssBANK0 dist/default/production\MindWave.X.production.o
+__Hintentry 4 0 CODE 0 intentry -
+_TX1STAbits 19E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_checksum 7C 0 COMMON 1 bssCOMMON dist/default/production\MindWave.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_poorQuality 7B 0 COMMON 1 bssCOMMON dist/default/production\MindWave.X.production.o
+__ptext1 CC4 0 CODE 0 text1 dist/default/production\MindWave.X.production.o
+__ptext2 CB8 0 CODE 0 text2 dist/default/production\MindWave.X.production.o
+__ptext3 CEC 0 CODE 0 text3 dist/default/production\MindWave.X.production.o
+__ptext4 C8A 0 CODE 0 text4 dist/default/production\MindWave.X.production.o
+__ptext5 D1E 0 CODE 0 text5 dist/default/production\MindWave.X.production.o
+__ptext6 D04 0 CODE 0 text6 dist/default/production\MindWave.X.production.o
+__ptext7 C82 0 CODE 0 text7 dist/default/production\MindWave.X.production.o
+__ptext8 D80 0 CODE 0 text8 dist/default/production\MindWave.X.production.o
+__ptext9 CDC 0 CODE 0 text9 dist/default/production\MindWave.X.production.o
+__end_of_turn_right CD0 0 CODE 0 text1 dist/default/production\MindWave.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_SLRCONA 30C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_SLRCONB 30D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_SLRCONC 30E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_SLRCOND 30F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_SLRCONE 310 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\MindWave.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+_SP1BRGH 19C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_SP1BRGL 19B 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\MindWave.X.production.o
+__Hend_init 8 0 CODE 0 end_init -
+__end_of_main FE2 0 CODE 0 maintext dist/default/production\MindWave.X.production.o
+__end_of_stop CC4 0 CODE 0 text2 dist/default/production\MindWave.X.production.o
+_RXPPS E3D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_TRISA 8C 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_TRISB 8D 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_TRISC 8E 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_TRISD 8F 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_TRISE 90 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_bigPacket 66 0 BANK0 1 bssBANK0 dist/default/production\MindWave.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+_eusartRxLastError 69 0 BANK0 1 bssBANK0 dist/default/production\MindWave.X.production.o
+_WDT_Initialize C82 0 CODE 0 text7 dist/default/production\MindWave.X.production.o
+__size_of_EUSART_SetErrorHandler 0 0 ABS 0 - dist/default/production\MindWave.X.production.o
+__end_of_OSCILLATOR_Initialize CEC 0 CODE 0 text9 dist/default/production\MindWave.X.production.o
+__initialization FE2 0 CODE 0 cinit dist/default/production\MindWave.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\MindWave.X.production.o
+_OSCILLATOR_Initialize CDC 0 CODE 0 text9 dist/default/production\MindWave.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F1 FE2 F 2
+text1 0 662 CC4 6 2
+text2 0 65C CB8 6 2
+text3 0 676 CEC C 2
+text4 0 645 C8A 5 2
+text5 0 68F D1E F 2
+text6 0 682 D04 D 2
+text7 0 641 C82 4 2
+text8 0 6C0 D80 45 2
+text9 0 66E CDC 8 2
+text10 0 69E D3C 22 2
+text11 0 656 CAC 6 2
+text12 0 650 CA0 6 2
+text13 0 64A C94 6 2
+maintext 0 705 E0A EC 2
+cstackCOMMON 1 70 70 E 1
+reset_vec 0 0 0 4 2
+bssBANK0 1 20 20 50 1
+clrtext 0 668 CD0 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
