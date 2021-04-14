@@ -43,11 +43,20 @@
 
 #include "mcc_generated_files/mcc.h"
 
+// Background Timer / Blinking
+long int counter = 0;
+int Data[512] = {0};
+int peakDetected = 0;
+long peakTime = 0;
+int peakP, peakM;
+int j = 0, n = 0;
+
 // checksum variables
 char generatedChecksum = 0;
 char checksum = 0; 
 unsigned char payloadLength = 0;
 char payloadData[64] = {0};
+char eegBands[8] = {0};
 char poorQuality = 0;
 char attention = 0;
 char meditation = 0;
@@ -56,7 +65,6 @@ unsigned int ByteRead;
 
 // system variables
 long lastReceivedPacket = 0;
-bool bigPacket = false;
 
 unsigned char readByte(){
     while (true) {
@@ -82,63 +90,59 @@ void printDebug(){
 }
 
 void forwards(){
-    RIGHT_B_SetHigh();
-    RIGHT_F_SetLow();
-    LEFT_B_SetHigh();
-    LEFT_F_SetLow();
+    M_RB_SetHigh();
+    M_RF_SetLow();
+    M_LB_SetHigh();
+    M_LF_SetLow();
 }
 
 void backwards(){
-    RIGHT_B_SetLow();
-    RIGHT_F_SetHigh();
-    LEFT_B_SetLow();
-    LEFT_F_SetHigh();
+    M_RB_SetLow();
+    M_RF_SetHigh();
+    M_LB_SetLow();
+    M_LF_SetHigh();
 }
 
 void turn_right(){
-    RIGHT_B_SetLow();
-    RIGHT_F_SetHigh();
-    LEFT_B_SetHigh();
-    LEFT_F_SetLow();
+    M_RB_SetLow();
+    M_RF_SetHigh();
+    M_LB_SetHigh();
+    M_LF_SetLow();
 }
 
 void turn_left(){
-    RIGHT_B_SetHigh();
-    RIGHT_F_SetLow();
-    LEFT_B_SetLow();
-    LEFT_F_SetHigh();
+    M_RB_SetHigh();
+    M_RF_SetLow();
+    M_LB_SetLow();
+    M_LF_SetHigh();
 }
 
 void stop(){
-    RIGHT_B_SetLow();
-    RIGHT_F_SetLow();
-    LEFT_B_SetLow();
-    LEFT_F_SetLow();
+    M_RB_SetLow();
+    M_RF_SetLow();
+    M_LB_SetLow();
+    M_LF_SetLow();
+}
+
+void __interrupt() timer_0(void){
+    if(INTCONbits.TMR0IF == 1){
+        TMR0_ISR();
+        counter++;
+    }
 }
 
 void main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
-
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
+    
+    INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_PeripheralInterruptEnable();
+    TMR0_Initialize();
 
     while (1)
     {
-        
+        long Hilf = 0;
         if (readByte() == 0xaa){
             if (readByte() == 0xaa){
                 
@@ -161,27 +165,53 @@ void main(void)
                     poorQuality = 200;
                     attention = 0;
                     meditation = 0;
+                    
+                    // Clear old EEG-data -> 
+                    for(uint8_t i = 0; i < 8; i++) {
+                        eegBands[i] = 0;
+                    }
   
                     for(int i = 0; i < payloadLength; i++) {    // Parse the payload
                       switch (payloadData[i]) {
-                      case 2:
-                        i++;            
-                        poorQuality = payloadData[i];
-                        bigPacket = true;            
+                      case 2:         
+                        poorQuality = payloadData[++i];        
                         break;
                       case 4:
-                        i++;
-                        attention = payloadData[i];                        
+                        attention = payloadData[++i];                        
                         break;
                       case 5:
-                        i++;
-                        meditation = payloadData[i];
+                        meditation = payloadData[++i];
                         break;
                       case 0x80:
-                        i = i + 3;
+                        if (readByte()==2){
+                              Hilf =  ((long)readByte() * 256 + (long)readByte());
+                              if (Hilf > 32767) Hilf -= (long)(65535);
+                              Data[j] = (int)Hilf;
+                              peakP += Data[(512 + j - 71) % 512];
+                              peakP -= Data[(512 + j - 50 - 71) % 512];
+                              if((peakP > 3000) && (Data[(512 + j - 70) % 512] < 0) && (peakP < 13000)){
+                                  if (counter - peakTime > 100){
+                                      peakM=0;
+                                      for(int k = 1; k <= 70; k++){
+                                          peakM +=  (int)(Data[(512 + j  + k - 70) % 512]);
+                                      }
+                                      if(peakM < -3000 && peakM > -11000){
+                                          if ((counter - peakTime) < 600)n++; else n = 1;
+                                          peakTime=counter;
+                                          peakDetected = 1;
+                                      }
+                                            
+                                  }
+                              }
+                              
+                          }                        
                         break;
                       case 0x83:
-                        i = i + 25;      
+                        // Used to collect individual values for the different wavetypes
+                        i++;
+                        for (int j = 0; j < 8; j++) {
+                            eegBands[j] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
+                        }
                         break;
                       default:
                         break;
@@ -193,14 +223,25 @@ void main(void)
                         //EUSART_Write('F');
                         //EUSART_Write(0x0d);
                         //EUSART_Write(0x0a);
-                    } else {
+                    } else { 
                         //printDebug();  
                         if (meditation > 60){
-                            turn_right();
-                            LED_SetHigh();
+                            turn_left();
                         } else {
                             stop();
-                            LED_SetLow();
+                        }
+                        
+                        if((counter-peakTime)>700 && peakDetected == 1){
+                            if(n==1){
+                                G5_Toggle();
+                            }
+                            if(n==2){
+                                G10_Toggle();
+                            }
+                            if(n==3){
+                                G1_Toggle();
+                            }
+                            peakDetected=0;
                         }
                     }
   

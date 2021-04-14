@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "mcc_generated_files/tmr0.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 44 "main.c"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 1 "mcc_generated_files/tmr0.c" 2
+# 51 "mcc_generated_files/tmr0.c"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -23617,18 +23615,10 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
+# 51 "mcc_generated_files/tmr0.c" 2
 
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 399 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 411 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
-
+# 1 "mcc_generated_files/tmr0.h" 1
+# 54 "mcc_generated_files/tmr0.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -23714,311 +23704,105 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "./mcc_generated_files/mcc.h" 2
+# 54 "mcc_generated_files/tmr0.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 3
-extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/interrupt_manager.h" 1
-# 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr0.h" 1
-# 98 "./mcc_generated_files/tmr0.h"
+# 55 "mcc_generated_files/tmr0.h" 2
+# 98 "mcc_generated_files/tmr0.h"
 void TMR0_Initialize(void);
-# 129 "./mcc_generated_files/tmr0.h"
+# 129 "mcc_generated_files/tmr0.h"
 uint8_t TMR0_ReadTimer(void);
-# 168 "./mcc_generated_files/tmr0.h"
+# 168 "mcc_generated_files/tmr0.h"
 void TMR0_WriteTimer(uint8_t timerVal);
-# 204 "./mcc_generated_files/tmr0.h"
+# 204 "mcc_generated_files/tmr0.h"
 void TMR0_Reload(void);
-# 219 "./mcc_generated_files/tmr0.h"
+# 219 "mcc_generated_files/tmr0.h"
 void TMR0_ISR(void);
-# 238 "./mcc_generated_files/tmr0.h"
+# 238 "mcc_generated_files/tmr0.h"
  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 256 "./mcc_generated_files/tmr0.h"
+# 256 "mcc_generated_files/tmr0.h"
 extern void (*TMR0_InterruptHandler)(void);
-# 274 "./mcc_generated_files/tmr0.h"
+# 274 "mcc_generated_files/tmr0.h"
 void TMR0_DefaultInterruptHandler(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/eusart.h" 1
-# 75 "./mcc_generated_files/eusart.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}eusart_status_t;
-# 110 "./mcc_generated_files/eusart.h"
-void EUSART_Initialize(void);
-# 158 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_ready(void);
-# 206 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_rx_ready(void);
-# 253 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_done(void);
-# 301 "./mcc_generated_files/eusart.h"
-eusart_status_t EUSART_get_last_status(void);
-# 321 "./mcc_generated_files/eusart.h"
-uint8_t EUSART_Read(void);
-# 341 "./mcc_generated_files/eusart.h"
-void EUSART_Write(uint8_t txData);
-# 361 "./mcc_generated_files/eusart.h"
-void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 379 "./mcc_generated_files/eusart.h"
-void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 397 "./mcc_generated_files/eusart.h"
-void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 57 "./mcc_generated_files/mcc.h" 2
-# 72 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 85 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 97 "./mcc_generated_files/mcc.h"
-void WDT_Initialize(void);
-# 44 "main.c" 2
+# 52 "mcc_generated_files/tmr0.c" 2
 
 
 
-long int counter = 0;
-int Data[512] = {0};
-int peakDetected = 0;
-long peakTime = 0;
-int peakP, peakM;
-int j = 0, n = 0;
 
 
-char generatedChecksum = 0;
-char checksum = 0;
-unsigned char payloadLength = 0;
-char payloadData[64] = {0};
-char eegBands[8] = {0};
-char poorQuality = 0;
-char attention = 0;
-char meditation = 0;
 
-unsigned int ByteRead;
+volatile uint8_t timer0ReloadVal;
+void (*TMR0_InterruptHandler)(void);
 
 
-long lastReceivedPacket = 0;
 
-unsigned char readByte(){
-    while (1) {
-        if ((EUSART_is_rx_ready())){
-            return EUSART_Read();
-        }
-    }
-}
 
-void printDebug(){
-    EUSART_Write('Q');
-    EUSART_Write(':');
-    EUSART_Write(' ');
-    EUSART_Write(poorQuality);
-    EUSART_Write(0x0d);
-    EUSART_Write(0x0a);
-    EUSART_Write('A');
-    EUSART_Write(':');
-    EUSART_Write(' ');
-    EUSART_Write(meditation);
-    EUSART_Write(0x0d);
-    EUSART_Write(0x0a);
-}
-
-void forwards(){
-    do { LATCbits.LATC7 = 1; } while(0);
-    do { LATDbits.LATD4 = 0; } while(0);
-    do { LATDbits.LATD5 = 1; } while(0);
-    do { LATDbits.LATD6 = 0; } while(0);
-}
-
-void backwards(){
-    do { LATCbits.LATC7 = 0; } while(0);
-    do { LATDbits.LATD4 = 1; } while(0);
-    do { LATDbits.LATD5 = 0; } while(0);
-    do { LATDbits.LATD6 = 1; } while(0);
-}
-
-void turn_right(){
-    do { LATCbits.LATC7 = 0; } while(0);
-    do { LATDbits.LATD4 = 1; } while(0);
-    do { LATDbits.LATD5 = 1; } while(0);
-    do { LATDbits.LATD6 = 0; } while(0);
-}
-
-void turn_left(){
-    do { LATCbits.LATC7 = 1; } while(0);
-    do { LATDbits.LATD4 = 0; } while(0);
-    do { LATDbits.LATD5 = 0; } while(0);
-    do { LATDbits.LATD6 = 1; } while(0);
-}
-
-void stop(){
-    do { LATCbits.LATC7 = 0; } while(0);
-    do { LATDbits.LATD4 = 0; } while(0);
-    do { LATDbits.LATD5 = 0; } while(0);
-    do { LATDbits.LATD6 = 0; } while(0);
-}
-
-void __attribute__((picinterrupt(("")))) timer_0(void){
-    if(INTCONbits.TMR0IF == 1){
-        TMR0_ISR();
-        counter++;
-    }
-}
-
-void main(void)
+void TMR0_Initialize(void)
 {
 
-    SYSTEM_Initialize();
 
-    (INTCONbits.GIE = 1);
-    (INTCONbits.PEIE = 1);
-    TMR0_Initialize();
 
-    while (1)
+    OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | (0xD1 & 0x3F));
+
+
+    TMR0 = 0x83;
+
+
+    timer0ReloadVal= 131;
+
+
+    INTCONbits.TMR0IF = 0;
+
+
+    INTCONbits.TMR0IE = 1;
+
+
+    TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
+}
+
+uint8_t TMR0_ReadTimer(void)
+{
+    uint8_t readVal;
+
+    readVal = TMR0;
+
+    return readVal;
+}
+
+void TMR0_WriteTimer(uint8_t timerVal)
+{
+
+    TMR0 = timerVal;
+}
+
+void TMR0_Reload(void)
+{
+
+    TMR0 = timer0ReloadVal;
+}
+
+void TMR0_ISR(void)
+{
+
+
+    INTCONbits.TMR0IF = 0;
+
+    TMR0 = timer0ReloadVal;
+
+    if(TMR0_InterruptHandler)
     {
-        long Hilf = 0;
-        if (readByte() == 0xaa){
-            if (readByte() == 0xaa){
-
-                int payloadLength = readByte();
-                if (payloadLength > 169){
-                    return;
-                }
-
-                generatedChecksum = 0;
-                for(int i = 0; i < payloadLength; i++) {
-                    payloadData[i] = readByte();
-                    generatedChecksum += payloadData[i];
-                }
-
-                checksum = readByte();
-                generatedChecksum = 255 - generatedChecksum;
-
-                if(checksum == generatedChecksum) {
-
-                    poorQuality = 200;
-                    attention = 0;
-                    meditation = 0;
-
-
-                    for(uint8_t i = 0; i < 8; i++) {
-                        eegBands[i] = 0;
-                    }
-
-                    for(int i = 0; i < payloadLength; i++) {
-                      switch (payloadData[i]) {
-                      case 2:
-                        poorQuality = payloadData[++i];
-                        break;
-                      case 4:
-                        attention = payloadData[++i];
-                        break;
-                      case 5:
-                        meditation = payloadData[++i];
-                        break;
-                      case 0x80:
-                        if (readByte()==2){
-                              Hilf = ((long)readByte() * 256 + (long)readByte());
-                              if (Hilf > 32767) Hilf -= (long)(65535);
-                              Data[j] = (int)Hilf;
-                              peakP += Data[(512 + j - 71) % 512];
-                              peakP -= Data[(512 + j - 50 - 71) % 512];
-                              if((peakP > 3000) && (Data[(512 + j - 70) % 512] < 0) && (peakP < 13000)){
-                                  if (counter - peakTime > 100){
-                                      peakM=0;
-                                      for(int k = 1; k <= 70; k++){
-                                          peakM += (int)(Data[(512 + j + k - 70) % 512]);
-                                      }
-                                      if(peakM < -3000 && peakM > -11000){
-                                          if ((counter - peakTime) < 600)n++; else n = 1;
-                                          peakTime=counter;
-                                          peakDetected = 1;
-                                      }
-
-                                  }
-                              }
-
-                          }
-                        break;
-                      case 0x83:
-
-                        i++;
-                        for (int j = 0; j < 8; j++) {
-                            eegBands[j] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
-                        }
-                        break;
-                      default:
-                        break;
-                      }
-                    }
-
-                    if (poorQuality == 200) {
-                        1;
-
-
-
-                    } else {
-
-                        if (meditation > 60){
-                            turn_left();
-                        } else {
-                            stop();
-                        }
-
-                        if((counter-peakTime)>700 && peakDetected == 1){
-                            if(n==1){
-                                do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
-                            }
-                            if(n==2){
-                                do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0);
-                            }
-                            if(n==3){
-                                do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
-                            }
-                            peakDetected=0;
-                        }
-                    }
-
-                }
-            }
-        }
+        TMR0_InterruptHandler();
     }
+
+
+}
+
+
+void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
+    TMR0_InterruptHandler = InterruptHandler;
+}
+
+void TMR0_DefaultInterruptHandler(void){
+
+
 }
