@@ -5,58 +5,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "321
 [; ;./mcc_generated_files/eusart.h: 321: uint8_t EUSART_Read(void);
 [v _EUSART_Read `(uc ~T0 @X0 0 ef ]
-"341
+[p mainexit ]
+"70 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"341 ./mcc_generated_files/eusart.h
 [; ;./mcc_generated_files/eusart.h: 341: void EUSART_Write(uint8_t txData);
 [v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
-"3017 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3017:     struct {
-[s S136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S136 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"3016
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3016: typedef union {
-[u S135 `S136 1 ]
-[n S135 . . ]
-"3028
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3028: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
-[v _LATCbits `VS135 ~T0 @X0 0 e@270 ]
-"3079
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3079:     struct {
-[s S138 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S138 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
-"3078
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3078: typedef union {
-[u S137 `S138 1 ]
-[n S137 . . ]
-"3090
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3090: extern volatile LATDbits_t LATDbits __attribute__((address(0x10F)));
-[v _LATDbits `VS137 ~T0 @X0 0 e@271 ]
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"357
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 357:     struct {
-[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
-"367
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 367:     struct {
-[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S32 . . T0IF . T0IE ]
-"356
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 356: typedef union {
-[u S30 `S31 1 `S32 1 ]
-[n S30 . . . ]
-"374
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"219 ./mcc_generated_files/tmr0.h
-[; ;./mcc_generated_files/tmr0.h: 219: void TMR0_ISR(void);
-[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
-[p mainexit ]
-"72 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"98 ./mcc_generated_files/tmr0.h
-[; ;./mcc_generated_files/tmr0.h: 98: void TMR0_Initialize(void);
-[v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -2082,813 +2037,340 @@ Version 4.0 HI-TECH Software Intermediate Code
 "46220
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 46220: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"47 main.c
-[; ;main.c: 47: long int counter = 0;
-[v _counter `l ~T0 @X0 1 e ]
-[i _counter
--> -> 0 `i `l
-]
-"48
-[; ;main.c: 48: int Data[512] = {0};
-[v _Data `i ~T0 @X0 -> 512 `i e ]
-[i _Data
+"46 main.c
+[; ;main.c: 46: const char MAC_ADDRESS [13] = "81,f9,2a5bb8";
+[v _MAC_ADDRESS `Cuc ~T0 @X0 -> 13 `i e ]
+[i _MAC_ADDRESS
 :U ..
--> 0 `i
+-> 56 `c
+-> 49 `c
+-> 44 `c
+-> 102 `c
+-> 57 `c
+-> 44 `c
+-> 50 `c
+-> 97 `c
+-> 53 `c
+-> 98 `c
+-> 98 `c
+-> 56 `c
+-> 0 `c
 ..
 ]
-"49
-[; ;main.c: 49: int peakDetected = 0;
-[v _peakDetected `i ~T0 @X0 1 e ]
-[i _peakDetected
--> 0 `i
+"47
+[; ;main.c: 47: long TIME_OUT = 25000;
+[v _TIME_OUT `l ~T0 @X0 1 e ]
+[i _TIME_OUT
+-> -> 25000 `i `l
 ]
 "50
-[; ;main.c: 50: long peakTime = 0;
-[v _peakTime `l ~T0 @X0 1 e ]
-[i _peakTime
--> -> 0 `i `l
-]
-"51
-[; ;main.c: 51: int peakP, peakM;
-[v _peakP `i ~T0 @X0 1 e ]
-[v _peakM `i ~T0 @X0 1 e ]
-"52
-[; ;main.c: 52: int j = 0, n = 0;
-[v _j `i ~T0 @X0 1 e ]
-[i _j
--> 0 `i
-]
-[v _n `i ~T0 @X0 1 e ]
-[i _n
--> 0 `i
-]
-"55
-[; ;main.c: 55: char generatedChecksum = 0;
+[; ;main.c: 50: char generatedChecksum = 0;
 [v _generatedChecksum `uc ~T0 @X0 1 e ]
 [i _generatedChecksum
 -> -> 0 `i `uc
 ]
-"56
-[; ;main.c: 56: char checksum = 0;
+"51
+[; ;main.c: 51: char checksum = 0;
 [v _checksum `uc ~T0 @X0 1 e ]
 [i _checksum
 -> -> 0 `i `uc
 ]
-"57
-[; ;main.c: 57: unsigned char payloadLength = 0;
+"52
+[; ;main.c: 52: unsigned char payloadLength = 0;
 [v _payloadLength `uc ~T0 @X0 1 e ]
 [i _payloadLength
 -> -> 0 `i `uc
 ]
-"58
-[; ;main.c: 58: char payloadData[64] = {0};
+"53
+[; ;main.c: 53: char payloadData[64] = {0};
 [v _payloadData `uc ~T0 @X0 -> 64 `i e ]
 [i _payloadData
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-"59
-[; ;main.c: 59: char eegBands[8] = {0};
-[v _eegBands `uc ~T0 @X0 -> 8 `i e ]
-[i _eegBands
-:U ..
--> -> 0 `i `uc
-..
-]
-"60
-[; ;main.c: 60: char poorQuality = 0;
+"54
+[; ;main.c: 54: char poorQuality = 0;
 [v _poorQuality `uc ~T0 @X0 1 e ]
 [i _poorQuality
 -> -> 0 `i `uc
 ]
-"61
-[; ;main.c: 61: char attention = 0;
+"55
+[; ;main.c: 55: char attention = 0;
 [v _attention `uc ~T0 @X0 1 e ]
 [i _attention
 -> -> 0 `i `uc
 ]
-"62
-[; ;main.c: 62: char meditation = 0;
+"56
+[; ;main.c: 56: char meditation = 0;
 [v _meditation `uc ~T0 @X0 1 e ]
 [i _meditation
 -> -> 0 `i `uc
 ]
-"64
-[; ;main.c: 64: unsigned int ByteRead;
+"58
+[; ;main.c: 58: unsigned int ByteRead;
 [v _ByteRead `ui ~T0 @X0 1 e ]
-"67
-[; ;main.c: 67: long lastReceivedPacket = 0;
+"61
+[; ;main.c: 61: long lastReceivedPacket = 0;
 [v _lastReceivedPacket `l ~T0 @X0 1 e ]
 [i _lastReceivedPacket
 -> -> 0 `i `l
 ]
-"69
-[; ;main.c: 69: unsigned char readByte(){
+"62
+[; ;main.c: 62: _Bool bigPacket = 0;
+[v _bigPacket `a ~T0 @X0 1 e ]
+[i _bigPacket
+-> -> 0 `i `a
+]
+"64
+[; ;main.c: 64: unsigned char readByte(){
 [v _readByte `(uc ~T0 @X0 1 ef ]
 {
 [e :U _readByte ]
 [f ]
-"70
-[; ;main.c: 70:     while (1) {
+"65
+[; ;main.c: 65:     while (1) {
 [e :U 2101 ]
 {
-"71
-[; ;main.c: 71:         if ((EUSART_is_rx_ready())){
+"66
+[; ;main.c: 66:         if ((EUSART_is_rx_ready())){
 [e $ ! != -> ( _EUSART_is_rx_ready ..  `i -> 0 `i 2103  ]
 {
-"72
-[; ;main.c: 72:             return EUSART_Read();
+"67
+[; ;main.c: 67:             return EUSART_Read();
 [e ) ( _EUSART_Read ..  ]
 [e $UE 2099  ]
-"73
-[; ;main.c: 73:         }
+"68
+[; ;main.c: 68:         }
 }
 [e :U 2103 ]
-"74
-[; ;main.c: 74:     }
+"69
+[; ;main.c: 69:     }
 }
 [e :U 2100 ]
 [e $U 2101  ]
 [e :U 2102 ]
-"75
-[; ;main.c: 75: }
+"70
+[; ;main.c: 70: }
 [e :UE 2099 ]
 }
-"77
-[; ;main.c: 77: void printDebug(){
-[v _printDebug `(v ~T0 @X0 1 ef ]
-{
-[e :U _printDebug ]
-[f ]
-"78
-[; ;main.c: 78:     EUSART_Write('Q');
-[e ( _EUSART_Write (1 -> -> 81 `ui `uc ]
-"79
-[; ;main.c: 79:     EUSART_Write(':');
-[e ( _EUSART_Write (1 -> -> 58 `ui `uc ]
-"80
-[; ;main.c: 80:     EUSART_Write(' ');
-[e ( _EUSART_Write (1 -> -> 32 `ui `uc ]
-"81
-[; ;main.c: 81:     EUSART_Write(poorQuality);
-[e ( _EUSART_Write (1 -> _poorQuality `uc ]
-"82
-[; ;main.c: 82:     EUSART_Write(0x0d);
-[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
-"83
-[; ;main.c: 83:     EUSART_Write(0x0a);
-[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
-"84
-[; ;main.c: 84:     EUSART_Write('A');
-[e ( _EUSART_Write (1 -> -> 65 `ui `uc ]
-"85
-[; ;main.c: 85:     EUSART_Write(':');
-[e ( _EUSART_Write (1 -> -> 58 `ui `uc ]
-"86
-[; ;main.c: 86:     EUSART_Write(' ');
-[e ( _EUSART_Write (1 -> -> 32 `ui `uc ]
-"87
-[; ;main.c: 87:     EUSART_Write(meditation);
-[e ( _EUSART_Write (1 -> _meditation `uc ]
-"88
-[; ;main.c: 88:     EUSART_Write(0x0d);
-[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
-"89
-[; ;main.c: 89:     EUSART_Write(0x0a);
-[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
-"90
-[; ;main.c: 90: }
-[e :UE 2104 ]
-}
-"92
-[; ;main.c: 92: void forwards(){
-[v _forwards `(v ~T0 @X0 1 ef ]
-{
-[e :U _forwards ]
-[f ]
-"93
-[; ;main.c: 93:     do { LATCbits.LATC7 = 1; } while(0);
-[e :U 2108 ]
-{
-[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
-}
-[e :U 2107 ]
-"94
-[; ;main.c: 94:     do { LATDbits.LATD4 = 0; } while(0);
-[e :U 2111 ]
-{
-[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
-}
-[e :U 2110 ]
-"95
-[; ;main.c: 95:     do { LATDbits.LATD5 = 1; } while(0);
-[e :U 2114 ]
-{
-[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
-}
-[e :U 2113 ]
-"96
-[; ;main.c: 96:     do { LATDbits.LATD6 = 0; } while(0);
-[e :U 2117 ]
-{
-[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
-}
-[e :U 2116 ]
-"97
-[; ;main.c: 97: }
-[e :UE 2105 ]
-}
-"99
-[; ;main.c: 99: void backwards(){
-[v _backwards `(v ~T0 @X0 1 ef ]
-{
-[e :U _backwards ]
-[f ]
-"100
-[; ;main.c: 100:     do { LATCbits.LATC7 = 0; } while(0);
-[e :U 2121 ]
-{
-[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
-}
-[e :U 2120 ]
-"101
-[; ;main.c: 101:     do { LATDbits.LATD4 = 1; } while(0);
-[e :U 2124 ]
-{
-[e = . . _LATDbits 0 4 -> -> 1 `i `uc ]
-}
-[e :U 2123 ]
-"102
-[; ;main.c: 102:     do { LATDbits.LATD5 = 0; } while(0);
-[e :U 2127 ]
-{
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 2126 ]
-"103
-[; ;main.c: 103:     do { LATDbits.LATD6 = 1; } while(0);
-[e :U 2130 ]
-{
-[e = . . _LATDbits 0 6 -> -> 1 `i `uc ]
-}
-[e :U 2129 ]
-"104
-[; ;main.c: 104: }
-[e :UE 2118 ]
-}
-"106
-[; ;main.c: 106: void turn_right(){
-[v _turn_right `(v ~T0 @X0 1 ef ]
-{
-[e :U _turn_right ]
-[f ]
-"107
-[; ;main.c: 107:     do { LATCbits.LATC7 = 0; } while(0);
-[e :U 2134 ]
-{
-[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
-}
-[e :U 2133 ]
-"108
-[; ;main.c: 108:     do { LATDbits.LATD4 = 1; } while(0);
-[e :U 2137 ]
-{
-[e = . . _LATDbits 0 4 -> -> 1 `i `uc ]
-}
-[e :U 2136 ]
-"109
-[; ;main.c: 109:     do { LATDbits.LATD5 = 1; } while(0);
-[e :U 2140 ]
-{
-[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
-}
-[e :U 2139 ]
-"110
-[; ;main.c: 110:     do { LATDbits.LATD6 = 0; } while(0);
-[e :U 2143 ]
-{
-[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
-}
-[e :U 2142 ]
-"111
-[; ;main.c: 111: }
-[e :UE 2131 ]
-}
-"113
-[; ;main.c: 113: void turn_left(){
-[v _turn_left `(v ~T0 @X0 1 ef ]
-{
-[e :U _turn_left ]
-[f ]
-"114
-[; ;main.c: 114:     do { LATCbits.LATC7 = 1; } while(0);
-[e :U 2147 ]
-{
-[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
-}
-[e :U 2146 ]
-"115
-[; ;main.c: 115:     do { LATDbits.LATD4 = 0; } while(0);
-[e :U 2150 ]
-{
-[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
-}
-[e :U 2149 ]
-"116
-[; ;main.c: 116:     do { LATDbits.LATD5 = 0; } while(0);
-[e :U 2153 ]
-{
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 2152 ]
-"117
-[; ;main.c: 117:     do { LATDbits.LATD6 = 1; } while(0);
-[e :U 2156 ]
-{
-[e = . . _LATDbits 0 6 -> -> 1 `i `uc ]
-}
-[e :U 2155 ]
-"118
-[; ;main.c: 118: }
-[e :UE 2144 ]
-}
-"120
-[; ;main.c: 120: void stop(){
-[v _stop `(v ~T0 @X0 1 ef ]
-{
-[e :U _stop ]
-[f ]
-"121
-[; ;main.c: 121:     do { LATCbits.LATC7 = 0; } while(0);
-[e :U 2160 ]
-{
-[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
-}
-[e :U 2159 ]
-"122
-[; ;main.c: 122:     do { LATDbits.LATD4 = 0; } while(0);
-[e :U 2163 ]
-{
-[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
-}
-[e :U 2162 ]
-"123
-[; ;main.c: 123:     do { LATDbits.LATD5 = 0; } while(0);
-[e :U 2166 ]
-{
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 2165 ]
-"124
-[; ;main.c: 124:     do { LATDbits.LATD6 = 0; } while(0);
-[e :U 2169 ]
-{
-[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
-}
-[e :U 2168 ]
-"125
-[; ;main.c: 125: }
-[e :UE 2157 ]
-}
-[v $root$_timer_0 `(v ~T0 @X0 0 e ]
-"127
-[; ;main.c: 127: void __attribute__((picinterrupt(("")))) timer_0(void){
-[v _timer_0 `(v ~T1 @X0 1 ef ]
-{
-[e :U _timer_0 ]
-[f ]
-"128
-[; ;main.c: 128:     if(INTCONbits.TMR0IF == 1){
-[e $ ! == -> . . _INTCONbits 0 2 `i -> 1 `i 2171  ]
-{
-"129
-[; ;main.c: 129:         TMR0_ISR();
-[e ( _TMR0_ISR ..  ]
-"130
-[; ;main.c: 130:         counter++;
-[e ++ _counter -> -> 1 `i `l ]
-"131
-[; ;main.c: 131:     }
-}
-[e :U 2171 ]
-"132
-[; ;main.c: 132: }
-[e :UE 2170 ]
-}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"134
-[; ;main.c: 134: void main(void)
+"75
+[; ;main.c: 75: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"135
-[; ;main.c: 135: {
+"76
+[; ;main.c: 76: {
 {
 [e :U _main ]
 [f ]
-"137
-[; ;main.c: 137:     SYSTEM_Initialize();
+"78
+[; ;main.c: 78:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"139
-[; ;main.c: 139:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"140
-[; ;main.c: 140:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"141
-[; ;main.c: 141:     TMR0_Initialize();
-[e ( _TMR0_Initialize ..  ]
-"143
-[; ;main.c: 143:     while (1)
-[e :U 2174 ]
-"144
-[; ;main.c: 144:     {
+"95
+[; ;main.c: 95:     while (1)
+[e :U 2106 ]
+"96
+[; ;main.c: 96:     {
 {
-"145
-[; ;main.c: 145:         long Hilf = 0;
-[v _Hilf `l ~T0 @X0 1 a ]
-[e = _Hilf -> -> 0 `i `l ]
-"146
-[; ;main.c: 146:         if (readByte() == 0xaa){
-[e $ ! == -> ( _readByte ..  `i -> 170 `i 2176  ]
+"98
+[; ;main.c: 98:         if (readByte() == 0xaa){
+[e $ ! == -> ( _readByte ..  `i -> 170 `i 2108  ]
 {
-"147
-[; ;main.c: 147:             if (readByte() == 0xaa){
-[e $ ! == -> ( _readByte ..  `i -> 170 `i 2177  ]
+"99
+[; ;main.c: 99:             if (readByte() == 0xaa){
+[e $ ! == -> ( _readByte ..  `i -> 170 `i 2109  ]
 {
-"149
-[; ;main.c: 149:                 int payloadLength = readByte();
+"101
+[; ;main.c: 101:                 int payloadLength = readByte();
 [v _payloadLength `i ~T0 @X0 1 a ]
 [e = _payloadLength -> ( _readByte ..  `i ]
-"150
-[; ;main.c: 150:                 if (payloadLength > 169){
-[e $ ! > _payloadLength -> 169 `i 2178  ]
+"102
+[; ;main.c: 102:                 if (payloadLength > 169){
+[e $ ! > _payloadLength -> 169 `i 2110  ]
 {
-"151
-[; ;main.c: 151:                     return;
-[e $UE 2172  ]
-"152
-[; ;main.c: 152:                 }
+"103
+[; ;main.c: 103:                     return;
+[e $UE 2104  ]
+"104
+[; ;main.c: 104:                 }
 }
-[e :U 2178 ]
-"154
-[; ;main.c: 154:                 generatedChecksum = 0;
+[e :U 2110 ]
+"106
+[; ;main.c: 106:                 generatedChecksum = 0;
 [e = _generatedChecksum -> -> 0 `i `uc ]
-"155
-[; ;main.c: 155:                 for(int i = 0; i < payloadLength; i++) {
+"107
+[; ;main.c: 107:                 for(int i = 0; i < payloadLength; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 2182  ]
-[e :U 2179 ]
+[e $U 2114  ]
+[e :U 2111 ]
 {
-"156
-[; ;main.c: 156:                     payloadData[i] = readByte();
+"108
+[; ;main.c: 108:                     payloadData[i] = readByte();
 [e = *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux -> ( _readByte ..  `uc ]
-"157
-[; ;main.c: 157:                     generatedChecksum += payloadData[i];
+"109
+[; ;main.c: 109:                     generatedChecksum += payloadData[i];
 [e =+ _generatedChecksum -> *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux `uc ]
-"158
-[; ;main.c: 158:                 }
+"110
+[; ;main.c: 110:                 }
 }
 [e ++ _i -> 1 `i ]
-[e :U 2182 ]
-[e $ < _i _payloadLength 2179  ]
-[e :U 2180 ]
+[e :U 2114 ]
+[e $ < _i _payloadLength 2111  ]
+[e :U 2112 ]
 }
-"160
-[; ;main.c: 160:                 checksum = readByte();
+"112
+[; ;main.c: 112:                 checksum = readByte();
 [e = _checksum -> ( _readByte ..  `uc ]
-"161
-[; ;main.c: 161:                 generatedChecksum = 255 - generatedChecksum;
+"113
+[; ;main.c: 113:                 generatedChecksum = 255 - generatedChecksum;
 [e = _generatedChecksum -> - -> 255 `i -> _generatedChecksum `i `uc ]
-"163
-[; ;main.c: 163:                 if(checksum == generatedChecksum) {
-[e $ ! == -> _checksum `i -> _generatedChecksum `i 2183  ]
+"115
+[; ;main.c: 115:                 if(checksum == generatedChecksum) {
+[e $ ! == -> _checksum `i -> _generatedChecksum `i 2115  ]
 {
-"165
-[; ;main.c: 165:                     poorQuality = 200;
+"117
+[; ;main.c: 117:                     poorQuality = 200;
 [e = _poorQuality -> -> 200 `i `uc ]
-"166
-[; ;main.c: 166:                     attention = 0;
+"118
+[; ;main.c: 118:                     attention = 0;
 [e = _attention -> -> 0 `i `uc ]
-"167
-[; ;main.c: 167:                     meditation = 0;
+"119
+[; ;main.c: 119:                     meditation = 0;
 [e = _meditation -> -> 0 `i `uc ]
-"170
-[; ;main.c: 170:                     for(uint8_t i = 0; i < 8; i++) {
-{
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `i -> 8 `i 2184  ]
-[e $U 2185  ]
-[e :U 2184 ]
-{
-"171
-[; ;main.c: 171:                         eegBands[i] = 0;
-[e = *U + &U _eegBands * -> _i `ux -> -> # *U &U _eegBands `ui `ux -> -> 0 `i `uc ]
-"172
-[; ;main.c: 172:                     }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 8 `i 2184  ]
-[e :U 2185 ]
-}
-"174
-[; ;main.c: 174:                     for(int i = 0; i < payloadLength; i++) {
+"121
+[; ;main.c: 121:                     for(int i = 0; i < payloadLength; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 2190  ]
-[e :U 2187 ]
+[e $U 2119  ]
+[e :U 2116 ]
 {
-"175
-[; ;main.c: 175:                       switch (payloadData[i]) {
-[e $U 2192  ]
+"122
+[; ;main.c: 122:                       switch (payloadData[i]) {
+[e $U 2121  ]
 {
-"176
-[; ;main.c: 176:                       case 2:
-[e :U 2193 ]
-"177
-[; ;main.c: 177:                         poorQuality = payloadData[++i];
-[e = _poorQuality *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
-"178
-[; ;main.c: 178:                         break;
-[e $U 2191  ]
-"179
-[; ;main.c: 179:                       case 4:
-[e :U 2194 ]
-"180
-[; ;main.c: 180:                         attention = payloadData[++i];
-[e = _attention *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
-"181
-[; ;main.c: 181:                         break;
-[e $U 2191  ]
-"182
-[; ;main.c: 182:                       case 5:
-[e :U 2195 ]
-"183
-[; ;main.c: 183:                         meditation = payloadData[++i];
-[e = _meditation *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
-"184
-[; ;main.c: 184:                         break;
-[e $U 2191  ]
-"185
-[; ;main.c: 185:                       case 0x80:
-[e :U 2196 ]
-"186
-[; ;main.c: 186:                         if (readByte()==2){
-[e $ ! == -> ( _readByte ..  `i -> 2 `i 2197  ]
-{
-"187
-[; ;main.c: 187:                               Hilf = ((long)readByte() * 256 + (long)readByte());
-[e = _Hilf + * -> ( _readByte ..  `l -> -> 256 `i `l -> ( _readByte ..  `l ]
-"188
-[; ;main.c: 188:                               if (Hilf > 32767) Hilf -= (long)(65535);
-[e $ ! > _Hilf -> -> 32767 `i `l 2198  ]
-[e =- _Hilf -> 65535 `l ]
-[e :U 2198 ]
-"189
-[; ;main.c: 189:                               Data[j] = (int)Hilf;
-[e = *U + &U _Data * -> -> _j `ui `ux -> -> # *U &U _Data `ui `ux -> _Hilf `i ]
-"190
-[; ;main.c: 190:                               peakP += Data[(512 + j - 71) % 512];
-[e =+ _peakP *U + &U _Data * -> -> % - + -> 512 `i _j -> 71 `i -> 512 `i `ui `ux -> -> # *U &U _Data `ui `ux ]
-"191
-[; ;main.c: 191:                               peakP -= Data[(512 + j - 50 - 71) % 512];
-[e =- _peakP *U + &U _Data * -> -> % - - + -> 512 `i _j -> 50 `i -> 71 `i -> 512 `i `ui `ux -> -> # *U &U _Data `ui `ux ]
-"192
-[; ;main.c: 192:                               if((peakP > 3000) && (Data[(512 + j - 70) % 512] < 0) && (peakP < 13000)){
-[e $ ! && && > _peakP -> 3000 `i < *U + &U _Data * -> -> % - + -> 512 `i _j -> 70 `i -> 512 `i `ui `ux -> -> # *U &U _Data `ui `ux -> 0 `i < _peakP -> 13000 `i 2199  ]
-{
-"193
-[; ;main.c: 193:                                   if (counter - peakTime > 100){
-[e $ ! > - _counter _peakTime -> -> 100 `i `l 2200  ]
-{
-"194
-[; ;main.c: 194:                                       peakM=0;
-[e = _peakM -> 0 `i ]
-"195
-[; ;main.c: 195:                                       for(int k = 1; k <= 70; k++){
-{
-[v _k `i ~T0 @X0 1 a ]
-[e = _k -> 1 `i ]
-[e $ <= _k -> 70 `i 2201  ]
-[e $U 2202  ]
-[e :U 2201 ]
-{
-"196
-[; ;main.c: 196:                                           peakM += (int)(Data[(512 + j + k - 70) % 512]);
-[e =+ _peakM *U + &U _Data * -> -> % - + + -> 512 `i _j _k -> 70 `i -> 512 `i `ui `ux -> -> # *U &U _Data `ui `ux ]
-"197
-[; ;main.c: 197:                                       }
-}
-[e ++ _k -> 1 `i ]
-[e $ <= _k -> 70 `i 2201  ]
-[e :U 2202 ]
-}
-"198
-[; ;main.c: 198:                                       if(peakM < -3000 && peakM > -11000){
-[e $ ! && < _peakM -U -> 3000 `i > _peakM -U -> 11000 `i 2204  ]
-{
-"199
-[; ;main.c: 199:                                           if ((counter - peakTime) < 600)n++; else n = 1;
-[e $ ! < - _counter _peakTime -> -> 600 `i `l 2205  ]
-[e ++ _n -> 1 `i ]
-[e $U 2206  ]
-[e :U 2205 ]
-[e = _n -> 1 `i ]
-[e :U 2206 ]
-"200
-[; ;main.c: 200:                                           peakTime=counter;
-[e = _peakTime _counter ]
-"201
-[; ;main.c: 201:                                           peakDetected = 1;
-[e = _peakDetected -> 1 `i ]
-"202
-[; ;main.c: 202:                                       }
-}
-[e :U 2204 ]
-"204
-[; ;main.c: 204:                                   }
-}
-[e :U 2200 ]
-"205
-[; ;main.c: 205:                               }
-}
-[e :U 2199 ]
-"207
-[; ;main.c: 207:                           }
-}
-[e :U 2197 ]
-"208
-[; ;main.c: 208:                         break;
-[e $U 2191  ]
-"209
-[; ;main.c: 209:                       case 0x83:
-[e :U 2207 ]
-"211
-[; ;main.c: 211:                         i++;
+"123
+[; ;main.c: 123:                       case 2:
+[e :U 2122 ]
+"124
+[; ;main.c: 124:                         i++;
 [e ++ _i -> 1 `i ]
-"212
-[; ;main.c: 212:                         for (int j = 0; j < 8; j++) {
-{
-[v _j `i ~T0 @X0 1 a ]
-[e = _j -> 0 `i ]
-[e $ < _j -> 8 `i 2208  ]
-[e $U 2209  ]
-[e :U 2208 ]
-{
-"213
-[; ;main.c: 213:                             eegBands[j] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
-[e = *U + &U _eegBands * -> -> _j `ui `ux -> -> # *U &U _eegBands `ui `ux -> | | << -> *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux `ul -> 16 `i << -> *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux `ul -> 8 `i -> *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux `ul `uc ]
-"214
-[; ;main.c: 214:                         }
+"125
+[; ;main.c: 125:                         poorQuality = payloadData[i];
+[e = _poorQuality *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
+"126
+[; ;main.c: 126:                         bigPacket = 1;
+[e = _bigPacket -> -> 1 `i `a ]
+"127
+[; ;main.c: 127:                         break;
+[e $U 2120  ]
+"128
+[; ;main.c: 128:                       case 4:
+[e :U 2123 ]
+"129
+[; ;main.c: 129:                         i++;
+[e ++ _i -> 1 `i ]
+"130
+[; ;main.c: 130:                         attention = payloadData[i];
+[e = _attention *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
+"131
+[; ;main.c: 131:                         break;
+[e $U 2120  ]
+"132
+[; ;main.c: 132:                       case 5:
+[e :U 2124 ]
+"133
+[; ;main.c: 133:                         i++;
+[e ++ _i -> 1 `i ]
+"134
+[; ;main.c: 134:                         meditation = payloadData[i];
+[e = _meditation *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
+"135
+[; ;main.c: 135:                         break;
+[e $U 2120  ]
+"136
+[; ;main.c: 136:                       case 0x80:
+[e :U 2125 ]
+"137
+[; ;main.c: 137:                         i = i + 3;
+[e = _i + _i -> 3 `i ]
+"138
+[; ;main.c: 138:                         break;
+[e $U 2120  ]
+"139
+[; ;main.c: 139:                       case 0x83:
+[e :U 2126 ]
+"140
+[; ;main.c: 140:                         i = i + 25;
+[e = _i + _i -> 25 `i ]
+"141
+[; ;main.c: 141:                         break;
+[e $U 2120  ]
+"142
+[; ;main.c: 142:                       default:
+[e :U 2127 ]
+"143
+[; ;main.c: 143:                         break;
+[e $U 2120  ]
+"144
+[; ;main.c: 144:                       }
 }
-[e ++ _j -> 1 `i ]
-[e $ < _j -> 8 `i 2208  ]
-[e :U 2209 ]
-}
-"215
-[; ;main.c: 215:                         break;
-[e $U 2191  ]
-"216
-[; ;main.c: 216:                       default:
-[e :U 2211 ]
-"217
-[; ;main.c: 217:                         break;
-[e $U 2191  ]
-"218
-[; ;main.c: 218:                       }
-}
-[e $U 2191  ]
-[e :U 2192 ]
-[e [\ -> *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux `i , $ -> 2 `i 2193
- , $ -> 4 `i 2194
- , $ -> 5 `i 2195
- , $ -> 128 `i 2196
- , $ -> 131 `i 2207
- 2211 ]
-[e :U 2191 ]
-"219
-[; ;main.c: 219:                     }
+[e $U 2120  ]
+[e :U 2121 ]
+[e [\ -> *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux `i , $ -> 2 `i 2122
+ , $ -> 4 `i 2123
+ , $ -> 5 `i 2124
+ , $ -> 128 `i 2125
+ , $ -> 131 `i 2126
+ 2127 ]
+[e :U 2120 ]
+"145
+[; ;main.c: 145:                     }
 }
 [e ++ _i -> 1 `i ]
-[e :U 2190 ]
-[e $ < _i _payloadLength 2187  ]
-[e :U 2188 ]
+[e :U 2119 ]
+[e $ < _i _payloadLength 2116  ]
+[e :U 2117 ]
 }
-"221
-[; ;main.c: 221:                     if (poorQuality == 200) {
-[e $ ! == -> _poorQuality `i -> 200 `i 2212  ]
-{
-"222
-[; ;main.c: 222:                         1;
-[e -> 1 `i ]
-"226
-[; ;main.c: 226:                     } else {
+"147
+[; ;main.c: 147:                     EUSART_Write(poorQuality);
+[e ( _EUSART_Write (1 -> _poorQuality `uc ]
+"148
+[; ;main.c: 148:                     EUSART_Write(0x0d);
+[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
+"149
+[; ;main.c: 149:                     EUSART_Write(0x0a);
+[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
+"150
+[; ;main.c: 150:                     EUSART_Write(attention);
+[e ( _EUSART_Write (1 -> _attention `uc ]
+"151
+[; ;main.c: 151:                     EUSART_Write(0x0d);
+[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
+"152
+[; ;main.c: 152:                     EUSART_Write(0x0a);
+[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
+"155
+[; ;main.c: 155:                 }
 }
-[e $U 2213  ]
-[e :U 2212 ]
-{
-"228
-[; ;main.c: 228:                         if (meditation > 60){
-[e $ ! > -> _meditation `i -> 60 `i 2214  ]
-{
-"229
-[; ;main.c: 229:                             turn_left();
-[e ( _turn_left ..  ]
-"230
-[; ;main.c: 230:                         } else {
+[e :U 2115 ]
+"156
+[; ;main.c: 156:             }
 }
-[e $U 2215  ]
-[e :U 2214 ]
-{
-"231
-[; ;main.c: 231:                             stop();
-[e ( _stop ..  ]
-"232
-[; ;main.c: 232:                         }
+[e :U 2109 ]
+"157
+[; ;main.c: 157:         }
 }
-[e :U 2215 ]
-"234
-[; ;main.c: 234:                         if((counter-peakTime)>700 && peakDetected == 1){
-[e $ ! && > - _counter _peakTime -> -> 700 `i `l == _peakDetected -> 1 `i 2216  ]
-{
-"235
-[; ;main.c: 235:                             if(n==1){
-[e $ ! == _n -> 1 `i 2217  ]
-{
-"236
-[; ;main.c: 236:                                 do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
-[e :U 2220 ]
-{
-[e = . . _LATDbits 0 2 -> ~ -> . . _LATDbits 0 2 `i `uc ]
+[e :U 2108 ]
+"158
+[; ;main.c: 158:     }
 }
-[e :U 2219 ]
-"237
-[; ;main.c: 237:                             }
-}
-[e :U 2217 ]
-"238
-[; ;main.c: 238:                             if(n==2){
-[e $ ! == _n -> 2 `i 2221  ]
-{
-"239
-[; ;main.c: 239:                                 do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0);
-[e :U 2224 ]
-{
-[e = . . _LATCbits 0 1 -> ~ -> . . _LATCbits 0 1 `i `uc ]
-}
-[e :U 2223 ]
-"240
-[; ;main.c: 240:                             }
-}
-[e :U 2221 ]
-"241
-[; ;main.c: 241:                             if(n==3){
-[e $ ! == _n -> 3 `i 2225  ]
-{
-"242
-[; ;main.c: 242:                                 do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
-[e :U 2228 ]
-{
-[e = . . _LATCbits 0 6 -> ~ -> . . _LATCbits 0 6 `i `uc ]
-}
-[e :U 2227 ]
-"243
-[; ;main.c: 243:                             }
-}
-[e :U 2225 ]
-"244
-[; ;main.c: 244:                             peakDetected=0;
-[e = _peakDetected -> 0 `i ]
-"245
-[; ;main.c: 245:                         }
-}
-[e :U 2216 ]
-"246
-[; ;main.c: 246:                     }
-}
-[e :U 2213 ]
-"248
-[; ;main.c: 248:                 }
-}
-[e :U 2183 ]
-"249
-[; ;main.c: 249:             }
-}
-[e :U 2177 ]
-"250
-[; ;main.c: 250:         }
-}
-[e :U 2176 ]
-"251
-[; ;main.c: 251:     }
-}
-[e :U 2173 ]
-[e $U 2174  ]
-[e :U 2175 ]
-"252
-[; ;main.c: 252: }
-[e :UE 2172 ]
+[e :U 2105 ]
+[e $U 2106  ]
+[e :U 2107 ]
+"159
+[; ;main.c: 159: }
+[e :UE 2104 ]
 }
