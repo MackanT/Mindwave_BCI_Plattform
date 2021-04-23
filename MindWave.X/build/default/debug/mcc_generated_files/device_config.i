@@ -13,7 +13,7 @@
 #pragma config PWRTE = OFF
 #pragma config MCLRE = ON
 #pragma config CP = OFF
-#pragma config BOREN = ON
+#pragma config BOREN = OFF
 #pragma config CLKOUTEN = OFF
 #pragma config IESO = ON
 #pragma config FCMEN = ON

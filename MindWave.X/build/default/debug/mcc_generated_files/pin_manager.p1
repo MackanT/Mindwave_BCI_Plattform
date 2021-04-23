@@ -119,9 +119,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40988
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 40988: extern volatile unsigned char RXPPS __attribute__((address(0xE3D)));
 [v _RXPPS `Vuc ~T0 @X0 0 e@3645 ]
-"41468
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 41468: extern volatile unsigned char RC6PPS __attribute__((address(0xEA6)));
-[v _RC6PPS `Vuc ~T0 @X0 0 e@3750 ]
+"41368
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 41368: extern volatile unsigned char RC1PPS __attribute__((address(0xEA1)));
+[v _RC1PPS `Vuc ~T0 @X0 0 e@3745 ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -2177,23 +2177,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 70:     TRISA = 0xFF;
 [e = _TRISA -> -> 255 `i `uc ]
 "71
-[; ;mcc_generated_files/pin_manager.c: 71:     TRISB = 0xFD;
-[e = _TRISB -> -> 253 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 71:     TRISB = 0xDF;
+[e = _TRISB -> -> 223 `i `uc ]
 "72
-[; ;mcc_generated_files/pin_manager.c: 72:     TRISC = 0xBF;
-[e = _TRISC -> -> 191 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 72:     TRISC = 0x01;
+[e = _TRISC -> -> 1 `i `uc ]
 "73
-[; ;mcc_generated_files/pin_manager.c: 73:     TRISD = 0xFF;
-[e = _TRISD -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 73:     TRISD = 0x80;
+[e = _TRISD -> -> 128 `i `uc ]
 "78
-[; ;mcc_generated_files/pin_manager.c: 78:     ANSELD = 0xFF;
-[e = _ANSELD -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 78:     ANSELD = 0x80;
+[e = _ANSELD -> -> 128 `i `uc ]
 "79
-[; ;mcc_generated_files/pin_manager.c: 79:     ANSELC = 0x3C;
-[e = _ANSELC -> -> 60 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 79:     ANSELC = 0x00;
+[e = _ANSELC -> -> 0 `i `uc ]
 "80
-[; ;mcc_generated_files/pin_manager.c: 80:     ANSELB = 0x3D;
-[e = _ANSELB -> -> 61 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 80:     ANSELB = 0x05;
+[e = _ANSELB -> -> 5 `i `uc ]
 "81
 [; ;mcc_generated_files/pin_manager.c: 81:     ANSELE = 0x07;
 [e = _ANSELE -> -> 7 `i `uc ]
@@ -2261,11 +2261,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 118:     INLVLD = 0xFF;
 [e = _INLVLD -> -> 255 `i `uc ]
 "127
-[; ;mcc_generated_files/pin_manager.c: 127:     RXPPS = 0x17;
-[e = _RXPPS -> -> 23 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 127:     RXPPS = 0x0B;
+[e = _RXPPS -> -> 11 `i `uc ]
 "128
-[; ;mcc_generated_files/pin_manager.c: 128:     RC6PPS = 0x24;
-[e = _RC6PPS -> -> 36 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 128:     RC1PPS = 0x24;
+[e = _RC1PPS -> -> 36 `i `uc ]
 "129
 [; ;mcc_generated_files/pin_manager.c: 129: }
 [e :UE 2097 ]

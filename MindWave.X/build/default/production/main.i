@@ -18,35 +18,35 @@ extern double __fpnormalize(double);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 168 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 204 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 int atoi (const char *);
@@ -99,7 +99,7 @@ uldiv_t uldiv (unsigned long, unsigned long);
 
 
 size_t __ctype_get_mb_cur_max(void);
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 2 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 2 3
 
 
 
@@ -23623,27 +23623,27 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 202 "./mcc_generated_files/pin_manager.h"
+# 380 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 214 "./mcc_generated_files/pin_manager.h"
+# 392 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
 
 
 typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int32_t;
 
 
@@ -23651,7 +23651,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -23664,7 +23664,7 @@ typedef unsigned char uint8_t;
 
 
 typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uint32_t;
 
 
@@ -23672,9 +23672,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 
 
 typedef int8_t int_fast8_t;
@@ -23707,19 +23707,19 @@ typedef uint24_t uint_fast24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/stdint.h" 1 3
 typedef int16_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 # 52 "./mcc_generated_files/mcc.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
 # 53 "./mcc_generated_files/mcc.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
 
 
 
@@ -23727,13 +23727,13 @@ typedef uint32_t uint_fast32_t;
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 3
 extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
 
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
 
 
 
@@ -23751,6 +23751,28 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 # 54 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 55 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr0.h" 1
+# 98 "./mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+# 129 "./mcc_generated_files/tmr0.h"
+uint8_t TMR0_ReadTimer(void);
+# 168 "./mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint8_t timerVal);
+# 204 "./mcc_generated_files/tmr0.h"
+void TMR0_Reload(void);
+# 219 "./mcc_generated_files/tmr0.h"
+void TMR0_ISR(void);
+# 238 "./mcc_generated_files/tmr0.h"
+ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 256 "./mcc_generated_files/tmr0.h"
+extern void (*TMR0_InterruptHandler)(void);
+# 274 "./mcc_generated_files/tmr0.h"
+void TMR0_DefaultInterruptHandler(void);
+# 56 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/eusart.h" 1
 # 75 "./mcc_generated_files/eusart.h"
@@ -23783,30 +23805,31 @@ void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "./mcc_generated_files/eusart.h"
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 55 "./mcc_generated_files/mcc.h" 2
-# 70 "./mcc_generated_files/mcc.h"
+# 57 "./mcc_generated_files/mcc.h" 2
+# 72 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "./mcc_generated_files/mcc.h"
+# 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 95 "./mcc_generated_files/mcc.h"
+# 97 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
 # 44 "main.c" 2
-
-
-
+# 56 "main.c"
 char generatedChecksum = 0;
 char checksum = 0;
 unsigned char payloadLength = 0;
-char payloadData[64] = {0};
+char payloadData[256] = {0};
+char eegBands[8] = {0};
 char poorQuality = 0;
 char attention = 0;
 char meditation = 0;
 
+int time_delay = 5;
+int time_stop = 3;
+int data_counter = 0;
+int avg_med = 0;
+int avg_att = 0;
+
 unsigned int ByteRead;
-
-
-long lastReceivedPacket = 0;
-_Bool bigPacket = 0;
 
 unsigned char readByte(){
     while (1) {
@@ -23816,71 +23839,175 @@ unsigned char readByte(){
     }
 }
 
-void printDebug(){
-    EUSART_Write('Q');
-    EUSART_Write(':');
-    EUSART_Write(' ');
-    EUSART_Write(poorQuality);
+void print_int(int comp){
+    if (comp < 35){
+        EUSART_Write(comp + 35);
+        EUSART_Write(65);
+    } else if (comp < 126){
+        EUSART_Write(comp);
+        EUSART_Write(66);
+    } else if (comp < 217){
+        EUSART_Write(comp - 91);
+        EUSART_Write(67);
+    } else {
+        EUSART_Write(comp - 182);
+        EUSART_Write(68);
+    }
+}
+
+void outputFile(){
+    print_int(poorQuality);
+    EUSART_Write(',');
+    print_int(meditation);
+    EUSART_Write(',');
+    print_int(attention);
+    EUSART_Write(',');
+    print_int(eegBands[0]);
+    EUSART_Write(',');
+    print_int(eegBands[1]);
+    EUSART_Write(',');
+    print_int(eegBands[2]);
+    EUSART_Write(',');
+    print_int(eegBands[3]);
+    EUSART_Write(',');
+    print_int(eegBands[4]);
+    EUSART_Write(',');
+    print_int(eegBands[5]);
+    EUSART_Write(',');
+    print_int(eegBands[6]);
+    EUSART_Write(',');
+    print_int(eegBands[7]);
+    EUSART_Write(',');
     EUSART_Write(0x0d);
     EUSART_Write(0x0a);
-    EUSART_Write('A');
-    EUSART_Write(':');
-    EUSART_Write(' ');
-    EUSART_Write(meditation);
-    EUSART_Write(0x0d);
-    EUSART_Write(0x0a);
+}
+
+void bootUpVisualizer(){
+    do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD3 = ~LATDbits.LATD3; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD3 = ~LATDbits.LATD3; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
+    _delay((unsigned long)((200)*(2000000/4000.0)));
+    do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+    _delay((unsigned long)((200)*(2000000/4000.0)));
+    do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
+
 }
 
 void forwards(){
-    do { LATDbits.LATD0 = 1; } while(0);
-    do { LATDbits.LATD1 = 0; } while(0);
-    do { LATCbits.LATC2 = 1; } while(0);
-    do { LATCbits.LATC3 = 0; } while(0);
+    do { LATCbits.LATC7 = 1; } while(0);
+    do { LATDbits.LATD4 = 0; } while(0);
+    do { LATDbits.LATD5 = 1; } while(0);
+    do { LATDbits.LATD6 = 0; } while(0);
 }
 
 void backwards(){
-    do { LATDbits.LATD0 = 0; } while(0);
-    do { LATDbits.LATD1 = 1; } while(0);
-    do { LATCbits.LATC2 = 0; } while(0);
-    do { LATCbits.LATC3 = 1; } while(0);
+    do { LATCbits.LATC7 = 0; } while(0);
+    do { LATDbits.LATD4 = 1; } while(0);
+    do { LATDbits.LATD5 = 0; } while(0);
+    do { LATDbits.LATD6 = 1; } while(0);
 }
 
 void turn_right(){
-    do { LATDbits.LATD0 = 0; } while(0);
-    do { LATDbits.LATD1 = 1; } while(0);
-    do { LATCbits.LATC2 = 1; } while(0);
-    do { LATCbits.LATC3 = 0; } while(0);
+    do { LATCbits.LATC7 = 0; } while(0);
+    do { LATDbits.LATD4 = 1; } while(0);
+    do { LATDbits.LATD5 = 1; } while(0);
+    do { LATDbits.LATD6 = 0; } while(0);
 }
 
 void turn_left(){
-    do { LATDbits.LATD0 = 1; } while(0);
-    do { LATDbits.LATD1 = 0; } while(0);
-    do { LATCbits.LATC2 = 0; } while(0);
-    do { LATCbits.LATC3 = 1; } while(0);
+    do { LATCbits.LATC7 = 1; } while(0);
+    do { LATDbits.LATD4 = 0; } while(0);
+    do { LATDbits.LATD5 = 0; } while(0);
+    do { LATDbits.LATD6 = 1; } while(0);
 }
 
 void stop(){
-    do { LATDbits.LATD0 = 0; } while(0);
-    do { LATDbits.LATD1 = 0; } while(0);
-    do { LATCbits.LATC2 = 0; } while(0);
-    do { LATCbits.LATC3 = 0; } while(0);
+    do { LATCbits.LATC7 = 0; } while(0);
+    do { LATDbits.LATD4 = 0; } while(0);
+    do { LATDbits.LATD5 = 0; } while(0);
+    do { LATDbits.LATD6 = 0; } while(0);
 }
 
+void move_system() {
+
+    EUSART_Write('M');
+    EUSART_Write(':');
+    print_int(avg_med);
+    EUSART_Write(',');
+    EUSART_Write('A');
+    EUSART_Write(':');
+    print_int(avg_att);
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
+
+    if (avg_med > avg_att && avg_med > 75) {
+        forwards();
+    } else if (attention > 65) {
+        turn_right();
+    } else {
+        stop();
+    }
+}
+# 228 "main.c"
 void main(void)
 {
 
     SYSTEM_Initialize();
-# 139 "main.c"
+
+    (INTCONbits.GIE = 1);
+    (INTCONbits.PEIE = 1);
+
+
+    bootUpVisualizer();
+
+    EUSART_Write('S');
+    EUSART_Write('T');
+    EUSART_Write('A');
+    EUSART_Write('R');
+    EUSART_Write('T');
+    EUSART_Write('I');
+    EUSART_Write('N');
+    EUSART_Write('G');
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
+
     while (1)
     {
+
 
         if (readByte() == 0xaa){
             if (readByte() == 0xaa){
 
                 int payloadLength = readByte();
-                if (payloadLength > 169){
-                    return;
-                }
+                if (payloadLength > 169) continue;
 
                 generatedChecksum = 0;
                 for(int i = 0; i < payloadLength; i++) {
@@ -23896,50 +24023,61 @@ void main(void)
                     poorQuality = 200;
                     attention = 0;
                     meditation = 0;
+                    for(int i = 0; i < 8; i++) eegBands[i] = 0;
 
                     for(int i = 0; i < payloadLength; i++) {
                       switch (payloadData[i]) {
-                      case 2:
-                        i++;
-                        poorQuality = payloadData[i];
-                        bigPacket = 1;
-                        break;
-                      case 4:
-                        i++;
-                        attention = payloadData[i];
-                        break;
-                      case 5:
-                        i++;
-                        meditation = payloadData[i];
-                        break;
-                      case 0x80:
-                        i = i + 3;
-                        break;
-                      case 0x83:
-                        i = i + 25;
-                        break;
-                      default:
-                        break;
-                      }
+                            case 2:
+                              poorQuality = payloadData[++i];
+                              break;
+                            case 4:
+                              attention = payloadData[++i];
+                              break;
+                            case 5:
+                              meditation = payloadData[++i];
+                              break;
+                            case 0x80:
+                                i += 3;
+# 310 "main.c"
+                              break;
+                          case 0x83:
+                              i++;
+                              for (int k = 0; k < 8; k++) {
+                                  eegBands[k] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
+                              }
+                              break;
+                            default:
+                              break;
+                            }
                     }
 
-                    if (poorQuality == 200) {
+
+                    if (poorQuality == 200 && payloadLength == 4) {
                         1;
-
-
-
+                    } else if (poorQuality == 200) {
+                        EUSART_Write('F');
+                        EUSART_Write(0x0d);
+                        EUSART_Write(0x0a);
                     } else {
+                        outputFile();
+                        data_counter += 1;
+                        avg_med += meditation;
+                        avg_att += attention;
 
-                        if (meditation > 60){
-                            turn_right();
-                            do { LATBbits.LATB1 = 1; } while(0);
-                        } else {
+                        data_counter %= time_delay;
+
+                        if (data_counter == 0) {
+                            avg_med /= time_delay;
+                            avg_att /= time_delay;
+                            move_system();
+                        } else if (data_counter == time_stop){
                             stop();
-                            do { LATBbits.LATB1 = 0; } while(0);
                         }
+# 361 "main.c"
                     }
-
+# 372 "main.c"
                 }
+
             }
         }
     }

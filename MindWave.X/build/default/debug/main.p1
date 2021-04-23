@@ -5,13 +5,62 @@ Version 4.0 HI-TECH Software Intermediate Code
 "321
 [; ;./mcc_generated_files/eusart.h: 321: uint8_t EUSART_Read(void);
 [v _EUSART_Read `(uc ~T0 @X0 0 ef ]
-[p mainexit ]
-"70 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"341 ./mcc_generated_files/eusart.h
+"341
 [; ;./mcc_generated_files/eusart.h: 341: void EUSART_Write(uint8_t txData);
 [v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
+"3017 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3017:     struct {
+[s S136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S136 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"3016
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3016: typedef union {
+[u S135 `S136 1 ]
+[n S135 . . ]
+"3028
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3028: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
+[v _LATCbits `VS135 ~T0 @X0 0 e@270 ]
+[v F14595 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
+[v __delay `JF14595 ~T0 @X0 0 e ]
+[p i __delay ]
+"3079 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3079:     struct {
+[s S138 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S138 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"3078
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3078: typedef union {
+[u S137 `S138 1 ]
+[n S137 . . ]
+"3090
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 3090: extern volatile LATDbits_t LATDbits __attribute__((address(0x10F)));
+[v _LATDbits `VS137 ~T0 @X0 0 e@271 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"357
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 357:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"367
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 367:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"356
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 356: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"374
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+"219 ./mcc_generated_files/tmr0.h
+[; ;./mcc_generated_files/tmr0.h: 219: void TMR0_ISR(void);
+[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
+[p mainexit ]
+"72 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"98 ./mcc_generated_files/tmr0.h
+[; ;./mcc_generated_files/tmr0.h: 98: void TMR0_Initialize(void);
+[v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -2037,340 +2086,1069 @@ Version 4.0 HI-TECH Software Intermediate Code
 "46220
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1779.h: 46220: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"46 main.c
-[; ;main.c: 46: const char MAC_ADDRESS [13] = "81,f9,2a5bb8";
-[v _MAC_ADDRESS `Cuc ~T0 @X0 -> 13 `i e ]
-[i _MAC_ADDRESS
+"48 main.c
+[; ;main.c: 48: long int counter = 0;
+[v _counter `l ~T0 @X0 1 e ]
+[i _counter
+-> -> 0 `i `l
+]
+"49
+[; ;main.c: 49: int Data[512] = {0};
+[v _Data `i ~T0 @X0 -> 512 `i e ]
+[i _Data
 :U ..
--> 56 `c
--> 49 `c
--> 44 `c
--> 102 `c
--> 57 `c
--> 44 `c
--> 50 `c
--> 97 `c
--> 53 `c
--> 98 `c
--> 98 `c
--> 56 `c
--> 0 `c
+-> 0 `i
 ..
 ]
-"47
-[; ;main.c: 47: long TIME_OUT = 25000;
-[v _TIME_OUT `l ~T0 @X0 1 e ]
-[i _TIME_OUT
--> -> 25000 `i `l
-]
 "50
-[; ;main.c: 50: char generatedChecksum = 0;
+[; ;main.c: 50: int peakDetected = 0;
+[v _peakDetected `i ~T0 @X0 1 e ]
+[i _peakDetected
+-> 0 `i
+]
+"51
+[; ;main.c: 51: long peakTime = 0;
+[v _peakTime `l ~T0 @X0 1 e ]
+[i _peakTime
+-> -> 0 `i `l
+]
+"52
+[; ;main.c: 52: int peakP, peakM;
+[v _peakP `i ~T0 @X0 1 e ]
+[v _peakM `i ~T0 @X0 1 e ]
+"53
+[; ;main.c: 53: int j = 0, n = 0;
+[v _j `i ~T0 @X0 1 e ]
+[i _j
+-> 0 `i
+]
+[v _n `i ~T0 @X0 1 e ]
+[i _n
+-> 0 `i
+]
+"56
+[; ;main.c: 56: char generatedChecksum = 0;
 [v _generatedChecksum `uc ~T0 @X0 1 e ]
 [i _generatedChecksum
 -> -> 0 `i `uc
 ]
-"51
-[; ;main.c: 51: char checksum = 0;
+"57
+[; ;main.c: 57: char checksum = 0;
 [v _checksum `uc ~T0 @X0 1 e ]
 [i _checksum
 -> -> 0 `i `uc
 ]
-"52
-[; ;main.c: 52: unsigned char payloadLength = 0;
+"58
+[; ;main.c: 58: unsigned char payloadLength = 0;
 [v _payloadLength `uc ~T0 @X0 1 e ]
 [i _payloadLength
 -> -> 0 `i `uc
 ]
-"53
-[; ;main.c: 53: char payloadData[64] = {0};
-[v _payloadData `uc ~T0 @X0 -> 64 `i e ]
+"59
+[; ;main.c: 59: char payloadData[256] = {0};
+[v _payloadData `uc ~T0 @X0 -> 256 `i e ]
 [i _payloadData
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-"54
-[; ;main.c: 54: char poorQuality = 0;
+"60
+[; ;main.c: 60: char eegBands[8] = {0};
+[v _eegBands `uc ~T0 @X0 -> 8 `i e ]
+[i _eegBands
+:U ..
+-> -> 0 `i `uc
+..
+]
+"61
+[; ;main.c: 61: char poorQuality = 0;
 [v _poorQuality `uc ~T0 @X0 1 e ]
 [i _poorQuality
 -> -> 0 `i `uc
 ]
-"55
-[; ;main.c: 55: char attention = 0;
+"62
+[; ;main.c: 62: char attention = 0;
 [v _attention `uc ~T0 @X0 1 e ]
 [i _attention
 -> -> 0 `i `uc
 ]
-"56
-[; ;main.c: 56: char meditation = 0;
+"63
+[; ;main.c: 63: char meditation = 0;
 [v _meditation `uc ~T0 @X0 1 e ]
 [i _meditation
 -> -> 0 `i `uc
 ]
-"58
-[; ;main.c: 58: unsigned int ByteRead;
+"65
+[; ;main.c: 65: unsigned int ByteRead;
 [v _ByteRead `ui ~T0 @X0 1 e ]
-"61
-[; ;main.c: 61: long lastReceivedPacket = 0;
+"68
+[; ;main.c: 68: long lastReceivedPacket = 0;
 [v _lastReceivedPacket `l ~T0 @X0 1 e ]
 [i _lastReceivedPacket
 -> -> 0 `i `l
 ]
-"62
-[; ;main.c: 62: _Bool bigPacket = 0;
-[v _bigPacket `a ~T0 @X0 1 e ]
-[i _bigPacket
--> -> 0 `i `a
-]
-"64
-[; ;main.c: 64: unsigned char readByte(){
+"70
+[; ;main.c: 70: unsigned char readByte(){
 [v _readByte `(uc ~T0 @X0 1 ef ]
 {
 [e :U _readByte ]
 [f ]
-"65
-[; ;main.c: 65:     while (1) {
+"71
+[; ;main.c: 71:     while (1) {
 [e :U 2101 ]
 {
-"66
-[; ;main.c: 66:         if ((EUSART_is_rx_ready())){
+"72
+[; ;main.c: 72:         if ((EUSART_is_rx_ready())){
 [e $ ! != -> ( _EUSART_is_rx_ready ..  `i -> 0 `i 2103  ]
 {
-"67
-[; ;main.c: 67:             return EUSART_Read();
+"73
+[; ;main.c: 73:             return EUSART_Read();
 [e ) ( _EUSART_Read ..  ]
 [e $UE 2099  ]
-"68
-[; ;main.c: 68:         }
+"74
+[; ;main.c: 74:         }
 }
 [e :U 2103 ]
-"69
-[; ;main.c: 69:     }
+"75
+[; ;main.c: 75:     }
 }
 [e :U 2100 ]
 [e $U 2101  ]
 [e :U 2102 ]
-"70
-[; ;main.c: 70: }
+"76
+[; ;main.c: 76: }
 [e :UE 2099 ]
 }
+"78
+[; ;main.c: 78: void printDebug(){
+[v _printDebug `(v ~T0 @X0 1 ef ]
+{
+[e :U _printDebug ]
+[f ]
+"79
+[; ;main.c: 79:     EUSART_Write('Q');
+[e ( _EUSART_Write (1 -> -> 81 `ui `uc ]
+"80
+[; ;main.c: 80:     EUSART_Write(':');
+[e ( _EUSART_Write (1 -> -> 58 `ui `uc ]
+"81
+[; ;main.c: 81:     EUSART_Write(' ');
+[e ( _EUSART_Write (1 -> -> 32 `ui `uc ]
+"82
+[; ;main.c: 82:     EUSART_Write(poorQuality);
+[e ( _EUSART_Write (1 -> _poorQuality `uc ]
+"83
+[; ;main.c: 83:     EUSART_Write(0x0d);
+[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
+"84
+[; ;main.c: 84:     EUSART_Write(0x0a);
+[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
+"85
+[; ;main.c: 85:     EUSART_Write('A');
+[e ( _EUSART_Write (1 -> -> 65 `ui `uc ]
+"86
+[; ;main.c: 86:     EUSART_Write(':');
+[e ( _EUSART_Write (1 -> -> 58 `ui `uc ]
+"87
+[; ;main.c: 87:     EUSART_Write(' ');
+[e ( _EUSART_Write (1 -> -> 32 `ui `uc ]
+"88
+[; ;main.c: 88:     EUSART_Write(meditation);
+[e ( _EUSART_Write (1 -> _meditation `uc ]
+"89
+[; ;main.c: 89:     EUSART_Write(0x0d);
+[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
+"90
+[; ;main.c: 90:     EUSART_Write(0x0a);
+[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
+"91
+[; ;main.c: 91:     EUSART_Write('D');
+[e ( _EUSART_Write (1 -> -> 68 `ui `uc ]
+"92
+[; ;main.c: 92:     EUSART_Write(':');
+[e ( _EUSART_Write (1 -> -> 58 `ui `uc ]
+"93
+[; ;main.c: 93:     EUSART_Write(' ');
+[e ( _EUSART_Write (1 -> -> 32 `ui `uc ]
+"94
+[; ;main.c: 94:     EUSART_Write(eegBands[0]);
+[e ( _EUSART_Write (1 -> *U + &U _eegBands * -> -> -> 0 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `uc ]
+"95
+[; ;main.c: 95:     EUSART_Write(0x0d);
+[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
+"96
+[; ;main.c: 96:     EUSART_Write(0x0a);
+[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
+"97
+[; ;main.c: 97: }
+[e :UE 2104 ]
+}
+"99
+[; ;main.c: 99: void print_int(int comp){
+[v _print_int `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _print_int ]
+[v _comp `i ~T0 @X0 1 r1 ]
+[f ]
+"100
+[; ;main.c: 100:     if (comp > 100) {
+[e $ ! > _comp -> 100 `i 2106  ]
+{
+"101
+[; ;main.c: 101:         EUSART_Write('F');
+[e ( _EUSART_Write (1 -> -> 70 `ui `uc ]
+"102
+[; ;main.c: 102:         EUSART_Write('F');
+[e ( _EUSART_Write (1 -> -> 70 `ui `uc ]
+"103
+[; ;main.c: 103:     }
+}
+[e :U 2106 ]
+"104
+[; ;main.c: 104:     if (comp < 35){
+[e $ ! < _comp -> 35 `i 2107  ]
+{
+"105
+[; ;main.c: 105:         EUSART_Write(comp + 35);
+[e ( _EUSART_Write (1 -> + _comp -> 35 `i `uc ]
+"106
+[; ;main.c: 106:         EUSART_Write(65);
+[e ( _EUSART_Write (1 -> -> 65 `i `uc ]
+"107
+[; ;main.c: 107:     } else if (comp < 126){
+}
+[e $U 2108  ]
+[e :U 2107 ]
+[e $ ! < _comp -> 126 `i 2109  ]
+{
+"108
+[; ;main.c: 108:         EUSART_Write(comp);
+[e ( _EUSART_Write (1 -> _comp `uc ]
+"109
+[; ;main.c: 109:         EUSART_Write(66);
+[e ( _EUSART_Write (1 -> -> 66 `i `uc ]
+"110
+[; ;main.c: 110:     } else if (comp < 217){
+}
+[e $U 2110  ]
+[e :U 2109 ]
+[e $ ! < _comp -> 217 `i 2111  ]
+{
+"111
+[; ;main.c: 111:         EUSART_Write(comp - 91);
+[e ( _EUSART_Write (1 -> - _comp -> 91 `i `uc ]
+"112
+[; ;main.c: 112:         EUSART_Write(67);
+[e ( _EUSART_Write (1 -> -> 67 `i `uc ]
+"113
+[; ;main.c: 113:     } else {
+}
+[e $U 2112  ]
+[e :U 2111 ]
+{
+"114
+[; ;main.c: 114:         EUSART_Write(comp - 182);
+[e ( _EUSART_Write (1 -> - _comp -> 182 `i `uc ]
+"115
+[; ;main.c: 115:         EUSART_Write(68);
+[e ( _EUSART_Write (1 -> -> 68 `i `uc ]
+"116
+[; ;main.c: 116:     }
+}
+[e :U 2112 ]
+[e :U 2110 ]
+[e :U 2108 ]
+"117
+[; ;main.c: 117: }
+[e :UE 2105 ]
+}
+"121
+[; ;main.c: 121: void outputFile(){
+[v _outputFile `(v ~T0 @X0 1 ef ]
+{
+[e :U _outputFile ]
+[f ]
+"122
+[; ;main.c: 122:     print_int(poorQuality);
+[e ( _print_int (1 -> _poorQuality `i ]
+"123
+[; ;main.c: 123:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"124
+[; ;main.c: 124:     print_int(meditation);
+[e ( _print_int (1 -> _meditation `i ]
+"125
+[; ;main.c: 125:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"126
+[; ;main.c: 126:     print_int(attention);
+[e ( _print_int (1 -> _attention `i ]
+"127
+[; ;main.c: 127:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"128
+[; ;main.c: 128:     print_int(eegBands[0]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 0 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"129
+[; ;main.c: 129:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"130
+[; ;main.c: 130:     print_int(eegBands[1]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 1 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"131
+[; ;main.c: 131:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"132
+[; ;main.c: 132:     print_int(eegBands[2]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 2 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"133
+[; ;main.c: 133:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"134
+[; ;main.c: 134:     print_int(eegBands[3]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 3 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"135
+[; ;main.c: 135:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"136
+[; ;main.c: 136:     print_int(eegBands[4]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 4 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"137
+[; ;main.c: 137:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"138
+[; ;main.c: 138:     print_int(eegBands[5]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 5 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"139
+[; ;main.c: 139:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"140
+[; ;main.c: 140:     print_int(eegBands[6]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 6 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"141
+[; ;main.c: 141:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"142
+[; ;main.c: 142:     print_int(eegBands[7]);
+[e ( _print_int (1 -> *U + &U _eegBands * -> -> -> 7 `i `ui `ux -> -> # *U &U _eegBands `ui `ux `i ]
+"143
+[; ;main.c: 143:     EUSART_Write(',');
+[e ( _EUSART_Write (1 -> -> 44 `ui `uc ]
+"144
+[; ;main.c: 144:     EUSART_Write(0x0d);
+[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
+"145
+[; ;main.c: 145:     EUSART_Write(0x0a);
+[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
+"146
+[; ;main.c: 146: }
+[e :UE 2113 ]
+}
+"148
+[; ;main.c: 148: void bootUpVisualizer(){
+[v _bootUpVisualizer `(v ~T0 @X0 1 ef ]
+{
+[e :U _bootUpVisualizer ]
+[f ]
+"149
+[; ;main.c: 149:     do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
+[e :U 2117 ]
+{
+[e = . . _LATCbits 0 6 -> ~ -> . . _LATCbits 0 6 `i `uc ]
+}
+[e :U 2116 ]
+"150
+[; ;main.c: 150:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"151
+[; ;main.c: 151:     do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
+[e :U 2120 ]
+{
+[e = . . _LATCbits 0 5 -> ~ -> . . _LATCbits 0 5 `i `uc ]
+}
+[e :U 2119 ]
+"152
+[; ;main.c: 152:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"153
+[; ;main.c: 153:     do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+[e :U 2123 ]
+{
+[e = . . _LATCbits 0 4 -> ~ -> . . _LATCbits 0 4 `i `uc ]
+}
+[e :U 2122 ]
+"154
+[; ;main.c: 154:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"155
+[; ;main.c: 155:     do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
+[e :U 2126 ]
+{
+[e = . . _LATCbits 0 6 -> ~ -> . . _LATCbits 0 6 `i `uc ]
+}
+[e :U 2125 ]
+"156
+[; ;main.c: 156:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"157
+[; ;main.c: 157:     do { LATDbits.LATD3 = ~LATDbits.LATD3; } while(0);
+[e :U 2129 ]
+{
+[e = . . _LATDbits 0 3 -> ~ -> . . _LATDbits 0 3 `i `uc ]
+}
+[e :U 2128 ]
+"158
+[; ;main.c: 158:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"159
+[; ;main.c: 159:     do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
+[e :U 2132 ]
+{
+[e = . . _LATCbits 0 5 -> ~ -> . . _LATCbits 0 5 `i `uc ]
+}
+[e :U 2131 ]
+"160
+[; ;main.c: 160:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"161
+[; ;main.c: 161:     do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
+[e :U 2135 ]
+{
+[e = . . _LATDbits 0 2 -> ~ -> . . _LATDbits 0 2 `i `uc ]
+}
+[e :U 2134 ]
+"162
+[; ;main.c: 162:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"163
+[; ;main.c: 163:     do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+[e :U 2138 ]
+{
+[e = . . _LATCbits 0 4 -> ~ -> . . _LATCbits 0 4 `i `uc ]
+}
+[e :U 2137 ]
+"164
+[; ;main.c: 164:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"165
+[; ;main.c: 165:     do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
+[e :U 2141 ]
+{
+[e = . . _LATDbits 0 1 -> ~ -> . . _LATDbits 0 1 `i `uc ]
+}
+[e :U 2140 ]
+"166
+[; ;main.c: 166:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"167
+[; ;main.c: 167:     do { LATDbits.LATD3 = ~LATDbits.LATD3; } while(0);
+[e :U 2144 ]
+{
+[e = . . _LATDbits 0 3 -> ~ -> . . _LATDbits 0 3 `i `uc ]
+}
+[e :U 2143 ]
+"168
+[; ;main.c: 168:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"169
+[; ;main.c: 169:     do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
+[e :U 2147 ]
+{
+[e = . . _LATDbits 0 0 -> ~ -> . . _LATDbits 0 0 `i `uc ]
+}
+[e :U 2146 ]
+"170
+[; ;main.c: 170:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"171
+[; ;main.c: 171:     do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
+[e :U 2150 ]
+{
+[e = . . _LATDbits 0 2 -> ~ -> . . _LATDbits 0 2 `i `uc ]
+}
+[e :U 2149 ]
+"172
+[; ;main.c: 172:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"173
+[; ;main.c: 173:     do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+[e :U 2153 ]
+{
+[e = . . _LATCbits 0 3 -> ~ -> . . _LATCbits 0 3 `i `uc ]
+}
+[e :U 2152 ]
+"174
+[; ;main.c: 174:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"175
+[; ;main.c: 175:     do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
+[e :U 2156 ]
+{
+[e = . . _LATDbits 0 1 -> ~ -> . . _LATDbits 0 1 `i `uc ]
+}
+[e :U 2155 ]
+"176
+[; ;main.c: 176:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"177
+[; ;main.c: 177:     do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
+[e :U 2159 ]
+{
+[e = . . _LATCbits 0 2 -> ~ -> . . _LATCbits 0 2 `i `uc ]
+}
+[e :U 2158 ]
+"178
+[; ;main.c: 178:     _delay((unsigned long)((100)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"179
+[; ;main.c: 179:     do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
+[e :U 2162 ]
+{
+[e = . . _LATDbits 0 0 -> ~ -> . . _LATDbits 0 0 `i `uc ]
+}
+[e :U 2161 ]
+"180
+[; ;main.c: 180:     _delay((unsigned long)((200)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"181
+[; ;main.c: 181:     do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+[e :U 2165 ]
+{
+[e = . . _LATCbits 0 3 -> ~ -> . . _LATCbits 0 3 `i `uc ]
+}
+[e :U 2164 ]
+"182
+[; ;main.c: 182:     _delay((unsigned long)((200)*(2000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"183
+[; ;main.c: 183:     do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
+[e :U 2168 ]
+{
+[e = . . _LATCbits 0 2 -> ~ -> . . _LATCbits 0 2 `i `uc ]
+}
+[e :U 2167 ]
+"185
+[; ;main.c: 185: }
+[e :UE 2114 ]
+}
+"187
+[; ;main.c: 187: void forwards(){
+[v _forwards `(v ~T0 @X0 1 ef ]
+{
+[e :U _forwards ]
+[f ]
+"188
+[; ;main.c: 188:     do { LATCbits.LATC7 = 1; } while(0);
+[e :U 2172 ]
+{
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 2171 ]
+"189
+[; ;main.c: 189:     do { LATDbits.LATD4 = 0; } while(0);
+[e :U 2175 ]
+{
+[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 2174 ]
+"190
+[; ;main.c: 190:     do { LATDbits.LATD5 = 1; } while(0);
+[e :U 2178 ]
+{
+[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 2177 ]
+"191
+[; ;main.c: 191:     do { LATDbits.LATD6 = 0; } while(0);
+[e :U 2181 ]
+{
+[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 2180 ]
+"192
+[; ;main.c: 192: }
+[e :UE 2169 ]
+}
+"194
+[; ;main.c: 194: void backwards(){
+[v _backwards `(v ~T0 @X0 1 ef ]
+{
+[e :U _backwards ]
+[f ]
+"195
+[; ;main.c: 195:     do { LATCbits.LATC7 = 0; } while(0);
+[e :U 2185 ]
+{
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+}
+[e :U 2184 ]
+"196
+[; ;main.c: 196:     do { LATDbits.LATD4 = 1; } while(0);
+[e :U 2188 ]
+{
+[e = . . _LATDbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 2187 ]
+"197
+[; ;main.c: 197:     do { LATDbits.LATD5 = 0; } while(0);
+[e :U 2191 ]
+{
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 2190 ]
+"198
+[; ;main.c: 198:     do { LATDbits.LATD6 = 1; } while(0);
+[e :U 2194 ]
+{
+[e = . . _LATDbits 0 6 -> -> 1 `i `uc ]
+}
+[e :U 2193 ]
+"199
+[; ;main.c: 199: }
+[e :UE 2182 ]
+}
+"201
+[; ;main.c: 201: void turn_right(){
+[v _turn_right `(v ~T0 @X0 1 ef ]
+{
+[e :U _turn_right ]
+[f ]
+"202
+[; ;main.c: 202:     do { LATCbits.LATC7 = 0; } while(0);
+[e :U 2198 ]
+{
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+}
+[e :U 2197 ]
+"203
+[; ;main.c: 203:     do { LATDbits.LATD4 = 1; } while(0);
+[e :U 2201 ]
+{
+[e = . . _LATDbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 2200 ]
+"204
+[; ;main.c: 204:     do { LATDbits.LATD5 = 1; } while(0);
+[e :U 2204 ]
+{
+[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 2203 ]
+"205
+[; ;main.c: 205:     do { LATDbits.LATD6 = 0; } while(0);
+[e :U 2207 ]
+{
+[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 2206 ]
+"206
+[; ;main.c: 206: }
+[e :UE 2195 ]
+}
+"208
+[; ;main.c: 208: void turn_left(){
+[v _turn_left `(v ~T0 @X0 1 ef ]
+{
+[e :U _turn_left ]
+[f ]
+"209
+[; ;main.c: 209:     do { LATCbits.LATC7 = 1; } while(0);
+[e :U 2211 ]
+{
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 2210 ]
+"210
+[; ;main.c: 210:     do { LATDbits.LATD4 = 0; } while(0);
+[e :U 2214 ]
+{
+[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 2213 ]
+"211
+[; ;main.c: 211:     do { LATDbits.LATD5 = 0; } while(0);
+[e :U 2217 ]
+{
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 2216 ]
+"212
+[; ;main.c: 212:     do { LATDbits.LATD6 = 1; } while(0);
+[e :U 2220 ]
+{
+[e = . . _LATDbits 0 6 -> -> 1 `i `uc ]
+}
+[e :U 2219 ]
+"213
+[; ;main.c: 213: }
+[e :UE 2208 ]
+}
+"215
+[; ;main.c: 215: void stop(){
+[v _stop `(v ~T0 @X0 1 ef ]
+{
+[e :U _stop ]
+[f ]
+"216
+[; ;main.c: 216:     do { LATCbits.LATC7 = 0; } while(0);
+[e :U 2224 ]
+{
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+}
+[e :U 2223 ]
+"217
+[; ;main.c: 217:     do { LATDbits.LATD4 = 0; } while(0);
+[e :U 2227 ]
+{
+[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 2226 ]
+"218
+[; ;main.c: 218:     do { LATDbits.LATD5 = 0; } while(0);
+[e :U 2230 ]
+{
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 2229 ]
+"219
+[; ;main.c: 219:     do { LATDbits.LATD6 = 0; } while(0);
+[e :U 2233 ]
+{
+[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 2232 ]
+"220
+[; ;main.c: 220: }
+[e :UE 2221 ]
+}
+[v $root$_timer_0 `(v ~T0 @X0 0 e ]
+"222
+[; ;main.c: 222: void __attribute__((picinterrupt(("")))) timer_0(void){
+[v _timer_0 `(v ~T1 @X0 1 ef ]
+{
+[e :U _timer_0 ]
+[f ]
+"223
+[; ;main.c: 223:     if(INTCONbits.TMR0IF == 1){
+[e $ ! == -> . . _INTCONbits 0 2 `i -> 1 `i 2235  ]
+{
+"224
+[; ;main.c: 224:         TMR0_ISR();
+[e ( _TMR0_ISR ..  ]
+"225
+[; ;main.c: 225:         counter++;
+[e ++ _counter -> -> 1 `i `l ]
+"226
+[; ;main.c: 226:     }
+}
+[e :U 2235 ]
+"227
+[; ;main.c: 227: }
+[e :UE 2234 ]
+}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"75
-[; ;main.c: 75: void main(void)
+"231
+[; ;main.c: 231: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"76
-[; ;main.c: 76: {
+"232
+[; ;main.c: 232: {
 {
 [e :U _main ]
 [f ]
-"78
-[; ;main.c: 78:     SYSTEM_Initialize();
+"234
+[; ;main.c: 234:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"95
-[; ;main.c: 95:     while (1)
-[e :U 2106 ]
-"96
-[; ;main.c: 96:     {
+"236
+[; ;main.c: 236:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"237
+[; ;main.c: 237:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"238
+[; ;main.c: 238:     TMR0_Initialize();
+[e ( _TMR0_Initialize ..  ]
+"240
+[; ;main.c: 240:     bootUpVisualizer();
+[e ( _bootUpVisualizer ..  ]
+"242
+[; ;main.c: 242:     EUSART_Write('S');
+[e ( _EUSART_Write (1 -> -> 83 `ui `uc ]
+"243
+[; ;main.c: 243:     EUSART_Write('T');
+[e ( _EUSART_Write (1 -> -> 84 `ui `uc ]
+"244
+[; ;main.c: 244:     EUSART_Write('A');
+[e ( _EUSART_Write (1 -> -> 65 `ui `uc ]
+"245
+[; ;main.c: 245:     EUSART_Write('R');
+[e ( _EUSART_Write (1 -> -> 82 `ui `uc ]
+"246
+[; ;main.c: 246:     EUSART_Write('T');
+[e ( _EUSART_Write (1 -> -> 84 `ui `uc ]
+"247
+[; ;main.c: 247:     EUSART_Write('I');
+[e ( _EUSART_Write (1 -> -> 73 `ui `uc ]
+"248
+[; ;main.c: 248:     EUSART_Write('N');
+[e ( _EUSART_Write (1 -> -> 78 `ui `uc ]
+"249
+[; ;main.c: 249:     EUSART_Write('G');
+[e ( _EUSART_Write (1 -> -> 71 `ui `uc ]
+"250
+[; ;main.c: 250:     EUSART_Write(0x0d);
+[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
+"251
+[; ;main.c: 251:     EUSART_Write(0x0a);
+[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
+"253
+[; ;main.c: 253:     while (1)
+[e :U 2238 ]
+"254
+[; ;main.c: 254:     {
 {
-"98
-[; ;main.c: 98:         if (readByte() == 0xaa){
-[e $ ! == -> ( _readByte ..  `i -> 170 `i 2108  ]
+"255
+[; ;main.c: 255:         long Hilf = 0;
+[v _Hilf `l ~T0 @X0 1 a ]
+[e = _Hilf -> -> 0 `i `l ]
+"256
+[; ;main.c: 256:             if (readByte() == 0xaa){
+[e $ ! == -> ( _readByte ..  `i -> 170 `i 2240  ]
 {
-"99
-[; ;main.c: 99:             if (readByte() == 0xaa){
-[e $ ! == -> ( _readByte ..  `i -> 170 `i 2109  ]
+"257
+[; ;main.c: 257:                 if (readByte() == 0xaa){
+[e $ ! == -> ( _readByte ..  `i -> 170 `i 2241  ]
 {
-"101
-[; ;main.c: 101:                 int payloadLength = readByte();
+"259
+[; ;main.c: 259:                     int payloadLength = readByte();
 [v _payloadLength `i ~T0 @X0 1 a ]
 [e = _payloadLength -> ( _readByte ..  `i ]
-"102
-[; ;main.c: 102:                 if (payloadLength > 169){
-[e $ ! > _payloadLength -> 169 `i 2110  ]
+"260
+[; ;main.c: 260:                     if (payloadLength < 169){
+[e $ ! < _payloadLength -> 169 `i 2242  ]
 {
-"103
-[; ;main.c: 103:                     return;
-[e $UE 2104  ]
-"104
-[; ;main.c: 104:                 }
-}
-[e :U 2110 ]
-"106
-[; ;main.c: 106:                 generatedChecksum = 0;
+"262
+[; ;main.c: 262:                         generatedChecksum = 0;
 [e = _generatedChecksum -> -> 0 `i `uc ]
-"107
-[; ;main.c: 107:                 for(int i = 0; i < payloadLength; i++) {
+"263
+[; ;main.c: 263:                         for(int i = 0; i < 8; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 2114  ]
-[e :U 2111 ]
+[e $ < _i -> 8 `i 2243  ]
+[e $U 2244  ]
+[e :U 2243 ]
 {
-"108
-[; ;main.c: 108:                     payloadData[i] = readByte();
+"264
+[; ;main.c: 264:                             eegBands[i] = 0;
+[e = *U + &U _eegBands * -> -> _i `ui `ux -> -> # *U &U _eegBands `ui `ux -> -> 0 `i `uc ]
+"265
+[; ;main.c: 265:                         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 8 `i 2243  ]
+[e :U 2244 ]
+}
+"267
+[; ;main.c: 267:                         for(int i = 0; i < payloadLength; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 2249  ]
+[e :U 2246 ]
+{
+"268
+[; ;main.c: 268:                             payloadData[i] = readByte();
 [e = *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux -> ( _readByte ..  `uc ]
-"109
-[; ;main.c: 109:                     generatedChecksum += payloadData[i];
+"269
+[; ;main.c: 269:                             generatedChecksum += payloadData[i];
 [e =+ _generatedChecksum -> *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux `uc ]
-"110
-[; ;main.c: 110:                 }
+"270
+[; ;main.c: 270:                         }
 }
 [e ++ _i -> 1 `i ]
-[e :U 2114 ]
-[e $ < _i _payloadLength 2111  ]
-[e :U 2112 ]
+[e :U 2249 ]
+[e $ < _i _payloadLength 2246  ]
+[e :U 2247 ]
 }
-"112
-[; ;main.c: 112:                 checksum = readByte();
+"272
+[; ;main.c: 272:                         checksum = readByte();
 [e = _checksum -> ( _readByte ..  `uc ]
-"113
-[; ;main.c: 113:                 generatedChecksum = 255 - generatedChecksum;
-[e = _generatedChecksum -> - -> 255 `i -> _generatedChecksum `i `uc ]
-"115
-[; ;main.c: 115:                 if(checksum == generatedChecksum) {
-[e $ ! == -> _checksum `i -> _generatedChecksum `i 2115  ]
-{
-"117
-[; ;main.c: 117:                     poorQuality = 200;
+"274
+[; ;main.c: 274:                         generatedChecksum &= 0xFF;
+[e =& _generatedChecksum -> -> 255 `i `uc ]
+"275
+[; ;main.c: 275:                         generatedChecksum = ~generatedChecksum & 0xFF;
+[e = _generatedChecksum -> & ~ -> _generatedChecksum `i -> 255 `i `uc ]
+"278
+[; ;main.c: 278:                             poorQuality = 200;
 [e = _poorQuality -> -> 200 `i `uc ]
-"118
-[; ;main.c: 118:                     attention = 0;
+"279
+[; ;main.c: 279:                             attention = 0;
 [e = _attention -> -> 0 `i `uc ]
-"119
-[; ;main.c: 119:                     meditation = 0;
+"280
+[; ;main.c: 280:                             meditation = 0;
 [e = _meditation -> -> 0 `i `uc ]
-"121
-[; ;main.c: 121:                     for(int i = 0; i < payloadLength; i++) {
+"287
+[; ;main.c: 287:                             for(int i = 0; i < payloadLength; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 2119  ]
-[e :U 2116 ]
+[e $U 2253  ]
+[e :U 2250 ]
 {
-"122
-[; ;main.c: 122:                       switch (payloadData[i]) {
-[e $U 2121  ]
+"288
+[; ;main.c: 288:                               switch (payloadData[i]) {
+[e $U 2255  ]
 {
-"123
-[; ;main.c: 123:                       case 2:
-[e :U 2122 ]
-"124
-[; ;main.c: 124:                         i++;
+"289
+[; ;main.c: 289:                                     case 2:
+[e :U 2256 ]
+"290
+[; ;main.c: 290:                                       poorQuality = payloadData[++i];
+[e = _poorQuality *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
+"291
+[; ;main.c: 291:                                       break;
+[e $U 2254  ]
+"292
+[; ;main.c: 292:                                     case 4:
+[e :U 2257 ]
+"293
+[; ;main.c: 293:                                       attention = payloadData[++i];
+[e = _attention *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
+"294
+[; ;main.c: 294:                                       break;
+[e $U 2254  ]
+"295
+[; ;main.c: 295:                                     case 5:
+[e :U 2258 ]
+"296
+[; ;main.c: 296:                                       meditation = payloadData[++i];
+[e = _meditation *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
+"297
+[; ;main.c: 297:                                       break;
+[e $U 2254  ]
+"298
+[; ;main.c: 298:                                     case 0x80:
+[e :U 2259 ]
+"299
+[; ;main.c: 299:                                         i += 3;
+[e =+ _i -> 3 `i ]
+"321
+[; ;main.c: 321:                                       break;
+[e $U 2254  ]
+"322
+[; ;main.c: 322:                                   case 0x83:
+[e :U 2260 ]
+"324
+[; ;main.c: 324:                                       i++;
 [e ++ _i -> 1 `i ]
-"125
-[; ;main.c: 125:                         poorQuality = payloadData[i];
-[e = _poorQuality *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
-"126
-[; ;main.c: 126:                         bigPacket = 1;
-[e = _bigPacket -> -> 1 `i `a ]
-"127
-[; ;main.c: 127:                         break;
-[e $U 2120  ]
-"128
-[; ;main.c: 128:                       case 4:
-[e :U 2123 ]
-"129
-[; ;main.c: 129:                         i++;
-[e ++ _i -> 1 `i ]
-"130
-[; ;main.c: 130:                         attention = payloadData[i];
-[e = _attention *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
-"131
-[; ;main.c: 131:                         break;
-[e $U 2120  ]
-"132
-[; ;main.c: 132:                       case 5:
-[e :U 2124 ]
-"133
-[; ;main.c: 133:                         i++;
-[e ++ _i -> 1 `i ]
-"134
-[; ;main.c: 134:                         meditation = payloadData[i];
-[e = _meditation *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux ]
-"135
-[; ;main.c: 135:                         break;
-[e $U 2120  ]
-"136
-[; ;main.c: 136:                       case 0x80:
-[e :U 2125 ]
-"137
-[; ;main.c: 137:                         i = i + 3;
-[e = _i + _i -> 3 `i ]
-"138
-[; ;main.c: 138:                         break;
-[e $U 2120  ]
-"139
-[; ;main.c: 139:                       case 0x83:
-[e :U 2126 ]
-"140
-[; ;main.c: 140:                         i = i + 25;
-[e = _i + _i -> 25 `i ]
-"141
-[; ;main.c: 141:                         break;
-[e $U 2120  ]
-"142
-[; ;main.c: 142:                       default:
-[e :U 2127 ]
-"143
-[; ;main.c: 143:                         break;
-[e $U 2120  ]
-"144
-[; ;main.c: 144:                       }
+"325
+[; ;main.c: 325:                                       for (int k = 0; k < 8; k++) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 0 `i ]
+[e $ < _k -> 8 `i 2261  ]
+[e $U 2262  ]
+[e :U 2261 ]
+{
+"326
+[; ;main.c: 326:                                           eegBands[k] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
+[e = *U + &U _eegBands * -> -> _k `ui `ux -> -> # *U &U _eegBands `ui `ux -> | | << -> *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux `ul -> 16 `i << -> *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux `ul -> 8 `i -> *U + &U _payloadData * -> -> =+ _i -> 1 `i `ui `ux -> -> # *U &U _payloadData `ui `ux `ul `uc ]
+"327
+[; ;main.c: 327:                                       }
 }
-[e $U 2120  ]
-[e :U 2121 ]
-[e [\ -> *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux `i , $ -> 2 `i 2122
- , $ -> 4 `i 2123
- , $ -> 5 `i 2124
- , $ -> 128 `i 2125
- , $ -> 131 `i 2126
- 2127 ]
-[e :U 2120 ]
-"145
-[; ;main.c: 145:                     }
+[e ++ _k -> 1 `i ]
+[e $ < _k -> 8 `i 2261  ]
+[e :U 2262 ]
+}
+"328
+[; ;main.c: 328:                                       break;
+[e $U 2254  ]
+"329
+[; ;main.c: 329:                                     default:
+[e :U 2264 ]
+"330
+[; ;main.c: 330:                                       break;
+[e $U 2254  ]
+"331
+[; ;main.c: 331:                                     }
+}
+[e $U 2254  ]
+[e :U 2255 ]
+[e [\ -> *U + &U _payloadData * -> -> _i `ui `ux -> -> # *U &U _payloadData `ui `ux `i , $ -> 2 `i 2256
+ , $ -> 4 `i 2257
+ , $ -> 5 `i 2258
+ , $ -> 128 `i 2259
+ , $ -> 131 `i 2260
+ 2264 ]
+[e :U 2254 ]
+"332
+[; ;main.c: 332:                             }
 }
 [e ++ _i -> 1 `i ]
-[e :U 2119 ]
-[e $ < _i _payloadLength 2116  ]
-[e :U 2117 ]
+[e :U 2253 ]
+[e $ < _i _payloadLength 2250  ]
+[e :U 2251 ]
 }
-"147
-[; ;main.c: 147:                     EUSART_Write(poorQuality);
-[e ( _EUSART_Write (1 -> _poorQuality `uc ]
-"148
-[; ;main.c: 148:                     EUSART_Write(0x0d);
+"333
+[; ;main.c: 333:                             j++;
+[e ++ _j -> 1 `i ]
+"335
+[; ;main.c: 335:                             if (poorQuality == 200 && payloadLength == 4) {
+[e $ ! && == -> _poorQuality `i -> 200 `i == _payloadLength -> 4 `i 2265  ]
+{
+"336
+[; ;main.c: 336:                                 1;
+[e -> 1 `i ]
+"344
+[; ;main.c: 344:                             } else if (poorQuality == 200) {
+}
+[e $U 2266  ]
+[e :U 2265 ]
+[e $ ! == -> _poorQuality `i -> 200 `i 2267  ]
+{
+"345
+[; ;main.c: 345:                                 EUSART_Write('F');
+[e ( _EUSART_Write (1 -> -> 70 `ui `uc ]
+"346
+[; ;main.c: 346:                                 EUSART_Write(0x0d);
 [e ( _EUSART_Write (1 -> -> 13 `i `uc ]
-"149
-[; ;main.c: 149:                     EUSART_Write(0x0a);
+"347
+[; ;main.c: 347:                                 EUSART_Write(0x0a);
 [e ( _EUSART_Write (1 -> -> 10 `i `uc ]
-"150
-[; ;main.c: 150:                     EUSART_Write(attention);
-[e ( _EUSART_Write (1 -> _attention `uc ]
-"151
-[; ;main.c: 151:                     EUSART_Write(0x0d);
-[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
-"152
-[; ;main.c: 152:                     EUSART_Write(0x0a);
-[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
-"155
-[; ;main.c: 155:                 }
+"348
+[; ;main.c: 348:                             } else {
 }
-[e :U 2115 ]
-"156
-[; ;main.c: 156:             }
+[e $U 2268  ]
+[e :U 2267 ]
+{
+"349
+[; ;main.c: 349:                                 outputFile();
+[e ( _outputFile ..  ]
+"374
+[; ;main.c: 374:                             }
 }
-[e :U 2109 ]
-"157
-[; ;main.c: 157:         }
+[e :U 2268 ]
+[e :U 2266 ]
+"386
+[; ;main.c: 386:                 }
 }
-[e :U 2108 ]
-"158
-[; ;main.c: 158:     }
+[e :U 2242 ]
+"387
+[; ;main.c: 387:             }
 }
-[e :U 2105 ]
-[e $U 2106  ]
-[e :U 2107 ]
-"159
-[; ;main.c: 159: }
-[e :UE 2104 ]
+[e :U 2241 ]
+"388
+[; ;main.c: 388:         }
+}
+[e :U 2240 ]
+"389
+[; ;main.c: 389:     }
+}
+[e :U 2237 ]
+[e $U 2238  ]
+[e :U 2239 ]
+"390
+[; ;main.c: 390: }
+[e :UE 2236 ]
 }

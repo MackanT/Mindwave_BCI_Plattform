@@ -23623,9 +23623,9 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 122 "./mcc_generated_files/pin_manager.h"
+# 380 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 134 "./mcc_generated_files/pin_manager.h"
+# 392 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -23752,6 +23752,28 @@ extern char * cgets(char *);
 extern void cputs(const char *);
 # 54 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 55 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr0.h" 1
+# 98 "./mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+# 129 "./mcc_generated_files/tmr0.h"
+uint8_t TMR0_ReadTimer(void);
+# 168 "./mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint8_t timerVal);
+# 204 "./mcc_generated_files/tmr0.h"
+void TMR0_Reload(void);
+# 219 "./mcc_generated_files/tmr0.h"
+void TMR0_ISR(void);
+# 238 "./mcc_generated_files/tmr0.h"
+ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 256 "./mcc_generated_files/tmr0.h"
+extern void (*TMR0_InterruptHandler)(void);
+# 274 "./mcc_generated_files/tmr0.h"
+void TMR0_DefaultInterruptHandler(void);
+# 56 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/eusart.h" 1
 # 75 "./mcc_generated_files/eusart.h"
 typedef union {
@@ -23783,24 +23805,31 @@ void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "./mcc_generated_files/eusart.h"
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 55 "./mcc_generated_files/mcc.h" 2
-# 70 "./mcc_generated_files/mcc.h"
+# 57 "./mcc_generated_files/mcc.h" 2
+# 72 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "./mcc_generated_files/mcc.h"
+# 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 95 "./mcc_generated_files/mcc.h"
+# 97 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
 # 44 "main.c" 2
 
 
-const char MAC_ADDRESS [13] = "81,f9,2a5bb8";
-long TIME_OUT = 25000;
+
+
+long int counter = 0;
+int Data[512] = {0};
+int peakDetected = 0;
+long peakTime = 0;
+int peakP, peakM;
+int j = 0, n = 0;
 
 
 char generatedChecksum = 0;
 char checksum = 0;
 unsigned char payloadLength = 0;
-char payloadData[64] = {0};
+char payloadData[256] = {0};
+char eegBands[8] = {0};
 char poorQuality = 0;
 char attention = 0;
 char meditation = 0;
@@ -23809,7 +23838,6 @@ unsigned int ByteRead;
 
 
 long lastReceivedPacket = 0;
-_Bool bigPacket = 0;
 
 unsigned char readByte(){
     while (1) {
@@ -23819,6 +23847,156 @@ unsigned char readByte(){
     }
 }
 
+void printDebug(){
+    EUSART_Write('Q');
+    EUSART_Write(':');
+    EUSART_Write(' ');
+    EUSART_Write(poorQuality);
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
+    EUSART_Write('A');
+    EUSART_Write(':');
+    EUSART_Write(' ');
+    EUSART_Write(meditation);
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
+    EUSART_Write('D');
+    EUSART_Write(':');
+    EUSART_Write(' ');
+    EUSART_Write(eegBands[0]);
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
+}
+
+void print_int(int comp){
+    if (comp > 100) {
+        EUSART_Write('F');
+        EUSART_Write('F');
+    }
+    if (comp < 35){
+        EUSART_Write(comp + 35);
+        EUSART_Write(65);
+    } else if (comp < 126){
+        EUSART_Write(comp);
+        EUSART_Write(66);
+    } else if (comp < 217){
+        EUSART_Write(comp - 91);
+        EUSART_Write(67);
+    } else {
+        EUSART_Write(comp - 182);
+        EUSART_Write(68);
+    }
+}
+
+
+
+void outputFile(){
+    print_int(poorQuality);
+    EUSART_Write(',');
+    print_int(meditation);
+    EUSART_Write(',');
+    print_int(attention);
+    EUSART_Write(',');
+    print_int(eegBands[0]);
+    EUSART_Write(',');
+    print_int(eegBands[1]);
+    EUSART_Write(',');
+    print_int(eegBands[2]);
+    EUSART_Write(',');
+    print_int(eegBands[3]);
+    EUSART_Write(',');
+    print_int(eegBands[4]);
+    EUSART_Write(',');
+    print_int(eegBands[5]);
+    EUSART_Write(',');
+    print_int(eegBands[6]);
+    EUSART_Write(',');
+    print_int(eegBands[7]);
+    EUSART_Write(',');
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
+}
+
+void bootUpVisualizer(){
+    do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD3 = ~LATDbits.LATD3; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD3 = ~LATDbits.LATD3; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
+    _delay((unsigned long)((100)*(2000000/4000.0)));
+    do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
+    _delay((unsigned long)((200)*(2000000/4000.0)));
+    do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+    _delay((unsigned long)((200)*(2000000/4000.0)));
+    do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
+
+}
+
+void forwards(){
+    do { LATCbits.LATC7 = 1; } while(0);
+    do { LATDbits.LATD4 = 0; } while(0);
+    do { LATDbits.LATD5 = 1; } while(0);
+    do { LATDbits.LATD6 = 0; } while(0);
+}
+
+void backwards(){
+    do { LATCbits.LATC7 = 0; } while(0);
+    do { LATDbits.LATD4 = 1; } while(0);
+    do { LATDbits.LATD5 = 0; } while(0);
+    do { LATDbits.LATD6 = 1; } while(0);
+}
+
+void turn_right(){
+    do { LATCbits.LATC7 = 0; } while(0);
+    do { LATDbits.LATD4 = 1; } while(0);
+    do { LATDbits.LATD5 = 1; } while(0);
+    do { LATDbits.LATD6 = 0; } while(0);
+}
+
+void turn_left(){
+    do { LATCbits.LATC7 = 1; } while(0);
+    do { LATDbits.LATD4 = 0; } while(0);
+    do { LATDbits.LATD5 = 0; } while(0);
+    do { LATDbits.LATD6 = 1; } while(0);
+}
+
+void stop(){
+    do { LATCbits.LATC7 = 0; } while(0);
+    do { LATDbits.LATD4 = 0; } while(0);
+    do { LATDbits.LATD5 = 0; } while(0);
+    do { LATDbits.LATD6 = 0; } while(0);
+}
+
+void __attribute__((picinterrupt(("")))) timer_0(void){
+    if(INTCONbits.TMR0IF == 1){
+        TMR0_ISR();
+        counter++;
+    }
+}
 
 
 
@@ -23826,67 +24004,104 @@ void main(void)
 {
 
     SYSTEM_Initialize();
-# 95 "main.c"
+
+    (INTCONbits.GIE = 1);
+    (INTCONbits.PEIE = 1);
+    TMR0_Initialize();
+
+    bootUpVisualizer();
+
+    EUSART_Write('S');
+    EUSART_Write('T');
+    EUSART_Write('A');
+    EUSART_Write('R');
+    EUSART_Write('T');
+    EUSART_Write('I');
+    EUSART_Write('N');
+    EUSART_Write('G');
+    EUSART_Write(0x0d);
+    EUSART_Write(0x0a);
+
     while (1)
     {
-
-        if (readByte() == 0xaa){
+        long Hilf = 0;
             if (readByte() == 0xaa){
+                if (readByte() == 0xaa){
 
-                int payloadLength = readByte();
-                if (payloadLength > 169){
-                    return;
-                }
+                    int payloadLength = readByte();
+                    if (payloadLength < 169){
 
-                generatedChecksum = 0;
-                for(int i = 0; i < payloadLength; i++) {
-                    payloadData[i] = readByte();
-                    generatedChecksum += payloadData[i];
-                }
+                        generatedChecksum = 0;
+                        for(int i = 0; i < 8; i++) {
+                            eegBands[i] = 0;
+                        }
 
-                checksum = readByte();
-                generatedChecksum = 255 - generatedChecksum;
+                        for(int i = 0; i < payloadLength; i++) {
+                            payloadData[i] = readByte();
+                            generatedChecksum += payloadData[i];
+                        }
 
-                if(checksum == generatedChecksum) {
+                        checksum = readByte();
 
-                    poorQuality = 200;
-                    attention = 0;
-                    meditation = 0;
-
-                    for(int i = 0; i < payloadLength; i++) {
-                      switch (payloadData[i]) {
-                      case 2:
-                        i++;
-                        poorQuality = payloadData[i];
-                        bigPacket = 1;
-                        break;
-                      case 4:
-                        i++;
-                        attention = payloadData[i];
-                        break;
-                      case 5:
-                        i++;
-                        meditation = payloadData[i];
-                        break;
-                      case 0x80:
-                        i = i + 3;
-                        break;
-                      case 0x83:
-                        i = i + 25;
-                        break;
-                      default:
-                        break;
-                      }
-                    }
-
-                    EUSART_Write(poorQuality);
-                    EUSART_Write(0x0d);
-                    EUSART_Write(0x0a);
-                    EUSART_Write(attention);
-                    EUSART_Write(0x0d);
-                    EUSART_Write(0x0a);
+                        generatedChecksum &= 0xFF;
+                        generatedChecksum = ~generatedChecksum & 0xFF;
 
 
+                            poorQuality = 200;
+                            attention = 0;
+                            meditation = 0;
+
+
+
+
+
+
+                            for(int i = 0; i < payloadLength; i++) {
+                              switch (payloadData[i]) {
+                                    case 2:
+                                      poorQuality = payloadData[++i];
+                                      break;
+                                    case 4:
+                                      attention = payloadData[++i];
+                                      break;
+                                    case 5:
+                                      meditation = payloadData[++i];
+                                      break;
+                                    case 0x80:
+                                        i += 3;
+# 321 "main.c"
+                                      break;
+                                  case 0x83:
+
+                                      i++;
+                                      for (int k = 0; k < 8; k++) {
+                                          eegBands[k] = ((uint32_t)payloadData[++i] << 16) | ((uint32_t)payloadData[++i] << 8) | (uint32_t)payloadData[++i];
+                                      }
+                                      break;
+                                    default:
+                                      break;
+                                    }
+                            }
+                            j++;
+
+                            if (poorQuality == 200 && payloadLength == 4) {
+                                1;
+
+
+
+
+
+
+
+                            } else if (poorQuality == 200) {
+                                EUSART_Write('F');
+                                EUSART_Write(0x0d);
+                                EUSART_Write(0x0a);
+                            } else {
+                                outputFile();
+# 374 "main.c"
+                            }
+# 386 "main.c"
                 }
             }
         }
